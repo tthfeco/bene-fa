@@ -1,7 +1,13 @@
-import AppRouter from "./Router.jsx";
+import Header from "./components/Header.jsx";
+import Banner from "./components/Banner.jsx";
 
 function App() {
-  return <AppRouter />;
+  return (
+    <div>
+      <Header />
+      <Banner />
+    </div>
+  );
 }
 
 export default App;
