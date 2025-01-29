@@ -1,9 +1,9 @@
-import Header from "./components/Header.jsx";
-import Banner from "./components/Banner.jsx";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
 
 function App() {
   return (
-    <div>
+    <div style={{ margin: 0, padding: 0, overflowX: "hidden", width: "100vw" }}>
       <Header />
       <Banner />
     </div>

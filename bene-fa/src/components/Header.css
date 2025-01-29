@@ -1,38 +1,59 @@
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Biztosítja, hogy ne lógjon ki */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   color: white;
-  cursor: pointer;
+  z-index: 100;
+  background: transparent;
+  box-sizing: border-box; /* Padding nem növeli a szélességet */
 }
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-  }
 
-  .nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  .nav.open {
-    display: flex;
-  }
-
-  .nav a {
-    padding: 10px;
-    font-size: 1.5rem;
-  }
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 125px; /* Növeli a távolságot a linkek között */
+  padding-right: 125px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 50px; /* Lekerekített forma */
+}
+
+.nav a:hover {
+  border: 2px solid white; /* Fehér körvonal megjelenítése */
+  padding: 8px 18px; /* Megakadályozza az ugrálást a border miatt */
+  cursor: pointer; /* Kattintható egérmutató */
+}
+
+
