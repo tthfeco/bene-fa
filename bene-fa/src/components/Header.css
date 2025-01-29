@@ -1,8 +1,8 @@
 header {
   position: fixed;
-  top: 0;
+  top: 10px; /* Kis eltartás a fejléc fölött */
   left: 0;
-  width: 100%; /* Biztosítja, hogy ne lógjon ki */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +13,7 @@ header {
   box-sizing: border-box; /* Padding nem növeli a szélességet */
 }
 
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -20,8 +21,8 @@ header {
 
 .nav {
   display: flex;
-  gap: 100px; /* Növeli a távolságot a linkek között */
-  padding-right: 100px;
+  gap: 80px; /* Növeli a távolságot a linkek között */
+  padding-right: 80px;
 }
 
 .nav a {
