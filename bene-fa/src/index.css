@@ -74,11 +74,5 @@ html, body {
   width: 100vw;
 }
 
-body {
-  background-image: url("/assets/background_metszet.png");
-  background-repeat: repeat-y; /* Lefelé ismétlődik */
-  background-size: 100%; /* Szélességben teljes méretű marad */
-  background-blend-mode: multiply; /* Átlátszóság beállítása */
-  opacity: 0.5; /* 50% átlátszóság */
-}
+
 
