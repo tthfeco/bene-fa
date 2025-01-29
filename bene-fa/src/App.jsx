@@ -6,7 +6,8 @@ function App() {
   return (
     <div style={{ margin: 0, padding: 0, overflowX: "hidden", width: "100vw" }}>
       <Header />
-      <Banner />
+      <Banner />      
+      <div style={{ height: "100vh" }}></div> {/* Üres hely a banner után */}
       <Categories />
     </div>
   );
