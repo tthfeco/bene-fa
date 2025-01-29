@@ -15,12 +15,12 @@ export default function Categories() {
         <div key={index} className="category">
           <div className="category-image">
             {/* Később a megfelelő képeket behelyezed */}
+          <a href={category.link} className="category-arrow">➜</a>
           </div>
           <div className="category-text">
             <h3>{category.name}</h3>
             {category.description && <p>{category.description}</p>}
           </div>
-          <a href={category.link} className="category-arrow">➜</a>
         </div>
       ))}
     </section>

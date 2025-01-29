@@ -6,7 +6,6 @@
   background: white;
 }
 
-
 .category {
   position: relative;
   width: 180px;
@@ -47,8 +46,7 @@
 
 .category-arrow {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  top: 115px;
   background: black;
   color: white;
   width: 35px;
