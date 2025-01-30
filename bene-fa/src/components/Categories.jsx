@@ -1,12 +1,15 @@
 import "./Categories.css";
+import eloteto from '../assets/Categories_images/kategoria_eloteto.jpg';
+import konyha from '../assets/Categories_images/kategoria_konyha.jpeg';
+import ajto from '../assets/Categories_images/kategoria_ajto.jpg';
 
 export default function Categories() {
   const categories = [
     { name: "ABLAK", description: "", link: "#" },
-    { name: "AJTÓ", description: "beltéri, kültéri", link: "#" },
+    { name: "AJTÓ", description: "beltéri, kültéri", link: "#", image: ajto },
     { name: "REDŐNY", description: "", link: "#" },
-    { name: "KONYHABÚTOR", description: "", link: "#" },
-    { name: "ELŐTETŐ PERGOLA", description: "", link: "#" },
+    { name: "KONYHABÚTOR", description: "", link: "#", image: konyha },
+    { name: "ELŐTETŐ PERGOLA", description: "", link: "#", image: eloteto },
   ];
 
   return (
@@ -14,7 +17,7 @@ export default function Categories() {
       {categories.map((category, index) => (
         <div key={index} className="category">
           <div className="category-image">
-            {/* Később a megfelelő képeket behelyezed */}
+          {category.image && <img src={category.image} alt={category.name} />}
           <a href={category.link} className="category-arrow">➜</a>
           </div>
           <div className="category-text">
