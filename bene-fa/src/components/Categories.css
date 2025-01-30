@@ -153,11 +153,12 @@
   flex-direction: column;
   gap: 5px;
   top: 50%;
-  left: 95%; /* Az almenü közvetlenül a nyíl után kezdődjön */
-  transform: translateY(70%);
+  left: 90%; /* Közelebb húzzuk az almenüt */
+  transform: translateY(-50%);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 10;
   min-width: 150px;
+  width: max-content;
 }
 
 /****** Az almenü és a nyíl közötti kapcsolat fenntartása ******/
@@ -192,11 +193,11 @@
   border: 1px solid #ccc;
 }
 
-/****** Második szintű almenü alapból rejtve legyen ******/
+/****** Második szintű almenü közelebb legyen az elsőhöz ******/
 .second-level {
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 95%; /* Közelebb húzzuk a kültéri ajtók almenüjét */
   background: white;
   padding: 10px;
   border-radius: 5px;
@@ -206,6 +207,7 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 11;
   min-width: 150px;
+  width: max-content;
 }
 
 /****** Ha az egeret a "Kültéri ajtó" fölé viszed, a második szintű almenü is látható legyen ******/
@@ -214,4 +216,9 @@
   display: flex;
 }
 
+/****** Megakadályozza az almenü bezáródását, amikor az egér átmegy ******/
+.submenu,
+.second-level {
+  padding-bottom: 10px;
+}
 
