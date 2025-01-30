@@ -9,6 +9,7 @@ function App() {
       <Banner />      
       <div style={{ height: "100vh" }}></div> {/* Üres hely a banner után */}
       <Categories />
+      <div style={{ height: "100vh" }}></div> {/* Üres hely a banner után */}
     </div>
   );
 }
