@@ -14,12 +14,15 @@ const images = [
 
 const ReferenceGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState('');
 
   const handlePrev = () => {
+    setDirection('left');
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
 
   const handleNext = () => {
+    setDirection('right');
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
@@ -32,7 +35,7 @@ const ReferenceGallery = () => {
   };
 
   return (
-    <div className="gallery-container">
+    <div className={`gallery-container ${direction}`}>
       <button className="nav-button prev-button" onClick={handlePrev}>&#8592;</button>
       <div className="gallery">
         {getDisplayImages().map((image, index) => {
@@ -42,7 +45,9 @@ const ReferenceGallery = () => {
 
           return (
             <div key={image.id} className={className}>
-              <img src={image.src} alt={image.title} />
+              <div className="image-wrapper">
+                <img src={image.src} alt={image.title} />
+              </div>
               <div className="image-info">
                 <h3>{image.title}</h3>
                 <p>{image.text}</p>

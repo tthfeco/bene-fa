@@ -11,53 +11,68 @@
   .gallery {
     display: flex;
     align-items: center;
-    transition: transform 0.5s ease-in-out;
+    gap: 80px;  /* Képek közötti távolság növelése */
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .gallery-container.left .gallery {
+    transform: translateX(20px);  /* Balra történő animáció */
+  }
+  
+  .gallery-container.right .gallery {
+    transform: translateX(-20px);  /* Jobbra történő animáció */
   }
   
   .gallery-image {
     position: relative;
+    width: 250px;
+    height: 350px;
     opacity: 0.2;
-    transform: scale(0.8);
-    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+    transition: all 0.6s ease-in-out;
     border-radius: 20px;
     overflow: hidden;
-    margin: 0 10px;
-  }
-  
-  .gallery-image img {
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .gallery-image.active {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.2);
     z-index: 2;
   }
   
-  .gallery-image.prev,
-  .gallery-image.next {
-    opacity: 0.5;
+  .image-wrapper {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .gallery-image.hidden {
-    display: none;
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
   }
   
   .image-info {
     text-align: center;
-    margin-top: 10px;
+    padding: 10px 0;
   }
   
   .image-info h3 {
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 5px;
   }
   
   .image-info p {
     font-size: 14px;
     color: #666;
+    margin: 0;
   }
   
   .nav-button {
