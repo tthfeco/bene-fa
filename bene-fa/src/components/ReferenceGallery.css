@@ -1,0 +1,99 @@
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .gallery {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .gallery-image {
+    position: relative;
+    opacity: 0.2;
+    transform: scale(0.8);
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .gallery-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .gallery-image.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+  }
+  
+  .gallery-image.prev,
+  .gallery-image.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(0.8);
+    opacity: 0.2;
+    z-index: 1;
+  }
+  
+  .gallery-image.prev {
+    left: -120px;
+    border-bottom-right-radius: 40px;
+  }
+  
+  .gallery-image.next {
+    right: -120px;
+    border-bottom-left-radius: 40px;
+  }
+  
+  .image-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .image-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .image-info p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .nav-button {
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .prev-button {
+    left: 10px;
+    bottom: 20px;
+  }
+  
+  .next-button {
+    right: 10px;
+    bottom: 20px;
+  }
+  

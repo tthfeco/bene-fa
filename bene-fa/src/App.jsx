@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Categories from "./components/Categories";
 import ReferenceComponent from "./components/Referencia.jsx";
+import ReferenceGallery from "./components/ReferenceGallery.jsx";
 
 function App() {  
   return (
@@ -12,6 +13,7 @@ function App() {
       <Categories />
       <ReferenceComponent />
       <div style={{ height: "100vh" }}></div> {/* Üres hely a banner után */}
+      <ReferenceGallery />
     </div>
   );
 }
