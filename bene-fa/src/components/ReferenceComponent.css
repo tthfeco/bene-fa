@@ -4,7 +4,8 @@
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 32px;
-  margin-left: 15%; /* Bal oldali eltartás a képernyő szélétől*/
+  margin-left: 15%; /* Bal oldali eltartás a képernyő szélétől */
+  color: black; /* A szöveg színének beállítása */
 }
 
 .reference-title {
