@@ -23,14 +23,22 @@ const ReferenceGallery = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
+  const getDisplayImages = () => {
+    const prevIndex = (currentIndex - 1 + images.length) % images.length;
+    const nextIndex = (currentIndex + 1) % images.length;
+    const nextNextIndex = (currentIndex + 2) % images.length;
+
+    return [images[prevIndex], images[currentIndex], images[nextIndex], images[nextNextIndex]];
+  };
+
   return (
     <div className="gallery-container">
+      <button className="nav-button prev-button" onClick={handlePrev}>&#8592;</button>
       <div className="gallery">
-        {images.map((image, index) => {
+        {getDisplayImages().map((image, index) => {
           let className = 'gallery-image';
-          if (index === currentIndex) className += ' active';
-          else if (index === (currentIndex + 1) % images.length) className += ' next';
-          else if (index === (currentIndex - 1 + images.length) % images.length) className += ' prev';
+          if (index === 1) className += ' active';
+          else className += ' inactive';
 
           return (
             <div key={image.id} className={className}>
@@ -42,9 +50,8 @@ const ReferenceGallery = () => {
             </div>
           );
         })}
-        <button className="nav-button prev-button" onClick={handlePrev}>&#8592;</button>
-        <button className="nav-button next-button" onClick={handleNext}>&#8594;</button>
       </div>
+      <button className="nav-button next-button" onClick={handleNext}>&#8594;</button>
     </div>
   );
 };
