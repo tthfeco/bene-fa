@@ -1,0 +1,29 @@
+.reference-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .reference-title {
+    margin-right: 20px;
+  }
+  
+  .reference-line-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  
+  .reference-number {
+    font-size: 28px;
+  }
+  
+  .reference-line {
+    border-bottom: 2px solid black;
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
