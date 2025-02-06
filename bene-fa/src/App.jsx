@@ -12,7 +12,6 @@ function App() {
       <div style={{ height: "100vh" }}></div> {/* Üres hely a banner után */}
       <Categories />
       <ReferenceComponent />
-      <div style={{ height: "100vh" }}></div> {/* Üres hely a banner után */}
       <ReferenceGallery />
     </div>
   );
