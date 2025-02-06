@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './ReferenceGallery.css';
 import gallery1 from "../assets/Reference_gallery/Konyha_ferenczy.jpg";
-import gallery2 from "../assets/Reference_gallery/Konyha_fullled.jpeg";
+import gallery2 from "../assets/Reference_gallery/ajto1.jpg";
 import gallery3 from "../assets/Reference_gallery/Konyha_oldalso.jpg";
-import gallery4 from "../assets/Reference_gallery/Konyha_ferenczy.jpg";
+import gallery4 from "../assets/Reference_gallery/ajto2.jpg";
 
 const images = [
   { id: 1, src: gallery1, title: 'LOREM IPSUM', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tin' },
