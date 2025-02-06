@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import './ReferenceGallery.css';
+import gallery1 from "../assets/Reference_gallery/Konyha_ferenczy.jpg";
+import gallery2 from "../assets/Reference_gallery/Konyha_fullled.jpeg";
+import gallery3 from "../assets/Reference_gallery/Konyha_oldalso.jpg";
+import gallery4 from "../assets/Reference_gallery/Konyha_ferenczy.jpg";
 
 const images = [
-  { id: 1, src: 'image1.jpg', title: 'LOREM IPSUM', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tin' },
-  { id: 2, src: 'image2.jpg', title: 'LOREM IPSUM', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tin' },
-  { id: 3, src: 'image3.jpg', title: 'LOREM IPSUM', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tin' },
-  { id: 4, src: 'image4.jpg', title: 'LOREM IPSUM', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tin' },
+  { id: 1, src: gallery1, title: 'LOREM IPSUM', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tin' },
+  { id: 2, src: gallery2, title: 'LOREM IPSUM', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tin' },
+  { id: 3, src: gallery3, title: 'LOREM IPSUM', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tin' },
+  { id: 4, src: gallery4, title: 'LOREM IPSUM', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tin' },
 ];
 
 const ReferenceGallery = () => {
