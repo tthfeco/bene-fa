@@ -1,0 +1,17 @@
+.weboldal-lablec-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .weboldal-lablec-line {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto 10px auto;
+  }
+  
+  .weboldal-lablec-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
