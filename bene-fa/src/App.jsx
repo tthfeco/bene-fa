@@ -3,6 +3,7 @@ import Banner from "./components/Banner";
 import Categories from "./components/Categories";
 import ReferenceComponent from "./components/Referencia.jsx";
 import ReferenceGallery from "./components/ReferenceGallery.jsx";
+import WeboldalLablec from "./components/WeboldalLablec.jsx";
 
 function App() {  
   return (
@@ -13,6 +14,7 @@ function App() {
       <Categories />
       <ReferenceComponent />
       <ReferenceGallery />
+      <WeboldalLablec />
     </div>
   );
 }
