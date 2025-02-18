@@ -31,23 +31,32 @@ const MainSwiper = () => {
     setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
-  const getImage = (offset) => {
-    return images[(index + offset) % images.length];
-  };
-
   return (
     <div className="swiper-container">
       <button className="swiper-button-prev" onClick={prevSlide}>
         <img src={leftArrow} alt="Previous" />
       </button>
 
-      <div className="swiper-wrapper">
-        {[0, 1, 2, 3].map((offset) => (
-          <div key={offset} className={`swiper-slide-content ${offset === 1 ? "large" : "small"}`} style={{ backgroundImage: `url(${getImage(offset).src})` }}>
-            <div className="image-text">{getImage(offset).text}</div>
-          </div>
+      <Swiper
+        modules={[Navigation]}
+        spaceBetween={10}
+        slidesPerView={1.2}
+        navigation
+        loop
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+          },
+        }}
+      >
+        {images.map((image, idx) => (
+          <SwiperSlide key={idx}>
+            <div className={`swiper-slide-content ${idx === index ? "large" : "small"}`} style={{ backgroundImage: `url(${image.src})` }}>
+              <div className="image-text">{image.text}</div>
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
 
       <button className="swiper-button-next" onClick={nextSlide}>
         <img src={rightArrow} alt="Next" />
