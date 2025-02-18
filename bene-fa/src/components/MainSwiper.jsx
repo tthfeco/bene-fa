@@ -13,7 +13,12 @@ import Ajto1 from "../assets/Reference_gallery/ajto1.jpg";
 import KonyhaOldalso from "../assets/Reference_gallery/Konyha_oldalso.jpg";
 import Ajto2 from "../assets/Reference_gallery/ajto2.jpg";
 
-const images = [KonyhaFerenczy, Ajto1, KonyhaOldalso, Ajto2];
+const images = [
+  { src: KonyhaFerenczy, text: "Ferenczy konyha" },
+  { src: Ajto1, text: "Beltéri ajtó 1" },
+  { src: KonyhaOldalso, text: "Oldalsó konyhai nézet" },
+  { src: Ajto2, text: "Beltéri ajtó 2" },
+];
 
 const MainSwiper = () => {
   const [index, setIndex] = useState(0);
@@ -37,10 +42,11 @@ const MainSwiper = () => {
       </button>
 
       <div className="swiper-wrapper">
-        <div className="swiper-slide-content small" style={{ backgroundImage: `url(${getImage(0)})` }}></div>
-        <div className="swiper-slide-content large" style={{ backgroundImage: `url(${getImage(1)})` }}></div>
-        <div className="swiper-slide-content small" style={{ backgroundImage: `url(${getImage(2)})` }}></div>
-        <div className="swiper-slide-content small" style={{ backgroundImage: `url(${getImage(3)})` }}></div>
+        {[0, 1, 2, 3].map((offset) => (
+          <div key={offset} className={`swiper-slide-content ${offset === 1 ? "large" : "small"}`} style={{ backgroundImage: `url(${getImage(offset).src})` }}>
+            <div className="image-text">{getImage(offset).text}</div>
+          </div>
+        ))}
       </div>
 
       <button className="swiper-button-next" onClick={nextSlide}>
