@@ -5,6 +5,7 @@ import ReferenceComponent from "./components/Referencia.jsx";
 import ReferenceGallery from "./components/ReferenceGallery.jsx";
 import WeboldalLablec from "./components/WeboldalLablec.jsx";
 import MainGallery from "./components/MainGallery.jsx";
+import MainSwiper from "./components/MainSwiper.jsx";
 
 function App() {  
   return (
@@ -14,7 +15,7 @@ function App() {
       <div style={{ height: "100vh" }}></div> {/* Üres hely a banner után */}
       <Categories />
       <ReferenceComponent />
-      <MainGallery />
+      <MainSwiper />
       <WeboldalLablec />
     </div>
   );
