@@ -103,4 +103,19 @@
   .next-button {
     right: 20px;
   }
+
+  .left-inactive {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.right-inactive {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+
+
   

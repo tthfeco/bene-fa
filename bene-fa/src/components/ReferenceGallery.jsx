@@ -40,8 +40,12 @@ const ReferenceGallery = () => {
       <div className="gallery">
         {getDisplayImages().map((image, index) => {
           let className = 'gallery-image';
+          
           if (index === 1) className += ' active';
           else className += ' inactive';
+
+          if (index === 0) className += ' left-inactive';  // Bal oldali kép
+          if (index === 2) className += ' right-inactive'; // Jobb oldali kép
 
           return (
             <div key={image.id} className={className}>
