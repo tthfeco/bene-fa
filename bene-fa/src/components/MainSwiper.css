@@ -24,13 +24,36 @@
 .swiper-slide-content.small {
   width: 280px;
   height: 280px;
-  opacity: 0.7;
+  opacity: 0.7; 
 }
+
+.swiper-slide-content.small {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 0 white, 0 0 0 5px white; /* Extra fehér keret */
+}
+
+/* Befelé kerekített hatás a jobb alsó sarokban, sima ívekkel */
+.swiper-slide-content.small::after {
+    content: "";
+    position: absolute;
+    width: 60px; /* Kerekítés mérete, állítható */
+    height: 60px;
+    background: white;
+    bottom: 0;
+    right: 0;
+    clip-path: circle(85% at bottom right); /* Simább ív a jobb alsó sarokban */
+}
+
+
 
 .swiper-slide-content.large {
   width: 300px;
   height: 350px;
   opacity: 1;
+  
 }
 
 .swiper-button-prev,
@@ -47,3 +70,5 @@
   height: 40px;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
+
+
