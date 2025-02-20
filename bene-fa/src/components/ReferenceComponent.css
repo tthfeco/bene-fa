@@ -6,6 +6,7 @@
   font-size: 32px;
   margin-left: 15%; /* Bal oldali eltartás a képernyő szélétől */
   color: black; /* A szöveg színének beállítása */
+  margin-bottom: 100px;
 }
 
 .reference-title {
