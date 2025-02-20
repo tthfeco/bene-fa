@@ -43,7 +43,11 @@ const MainSwiper = () => {
 
       <div className="swiper-wrapper">
         {[0, 1, 2, 3].map((offset) => (
-          <div key={offset} className={`swiper-slide-content ${offset === 1 ? "large" : "small"}`} style={{ backgroundImage: `url(${getImage(offset).src})` }}>
+          <div
+            key={offset}
+            className={`swiper-slide-content ${offset === 1 ? "large" : "small"}`}
+            style={{ backgroundImage: `url(${getImage(offset).src})` }}
+          >
             <div className="image-text">{getImage(offset).text}</div>
           </div>
         ))}

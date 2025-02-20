@@ -19,6 +19,7 @@
   background-position: center;
   border-radius: 15px;
   transition: opacity 0.5s ease, transform 0.5s ease;
+  position: relative;
 }
 
 .swiper-slide-content.small {
@@ -35,24 +36,10 @@
     box-shadow: 0 10px 0 white, 0 0 0 5px white; /* Extra fehér keret */
 }
 
-/* Befelé kerekített hatás a jobb alsó sarokban, sima ívekkel */
-.swiper-slide-content.small::after {
-    content: "";
-    position: absolute;
-    width: 60px; /* Kerekítés mérete, állítható */
-    height: 60px;
-    background: white;
-    bottom: 0;
-    right: 0;
-    clip-path: circle(80% at bottom right); /* Simább ív a jobb alsó sarokban */
-}
-
-
 .swiper-slide-content.large {
   width: 380px;
   height: 400px;
   opacity: 1;
-  
 }
 
 .swiper-button-prev,
@@ -68,4 +55,48 @@
   width: 40px;
   height: 40px;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* Piros pszeudo elemek az első és harmadik elemhez (bal felső, jobb felső, jobb alsó sarok) */
+.swiper-slide-content:nth-child(1)::before,
+.swiper-slide-content:nth-child(3)::before{
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+}
+
+/* Az első elem bal felső, jobb felső és jobb alsó sarka */
+.swiper-slide-content:nth-child(1)::before {
+  top: 0;
+  left: 0;
+}
+
+.swiper-slide-content:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 60px; /* Kerekítés mérete, állítható */
+  height: 60px;
+  background: white;
+  bottom: 0;
+  right: 0;
+  clip-path: circle(80% at bottom right); /* Simább ív a jobb alsó sarokban */
+}
+
+/* A harmadik elem bal felső, jobb felső és jobb alsó sarka */
+.swiper-slide-content:nth-child(3)::before {
+  top: 0;
+  left: 0;
+}
+
+.swiper-slide-content:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 60px; /* Kerekítés mérete, állítható */
+  height: 60px;
+  background: white;
+  bottom: 0;
+  right: 0;
+  clip-path: circle(80% at bottom right); /* Simább ív a jobb alsó sarokban */
 }
