@@ -41,7 +41,8 @@ const MainSwiper = () => {
 
   return (
     <div className="swiper-container">
-      <button className="swiper-button-prev" onClick={prevSlide}>
+      {/* Bal nyíl */}
+      <button className="custom-button left" onClick={prevSlide}>
         <img src={leftArrow} alt="Previous" />
       </button>
 
@@ -61,7 +62,8 @@ const MainSwiper = () => {
         })}
       </div>
 
-      <button className="swiper-button-next" onClick={nextSlide}>
+      {/* Jobb nyíl */}
+      <button className="custom-button right" onClick={nextSlide}>
         <img src={rightArrow} alt="Next" />
       </button>
     </div>

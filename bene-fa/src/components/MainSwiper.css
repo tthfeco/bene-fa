@@ -52,8 +52,8 @@
 
 .swiper-button-prev img,
 .swiper-button-next img {
-  width: 40px;
-  height: 40px;
+  width: 30px !important;
+  height: 30px !important;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
@@ -119,4 +119,38 @@
   background-color: transparent;
   border-bottom-right-radius: 60%;
   box-shadow: 0.35rem 0.25rem white;
+}
+
+:root {
+  --arrow-left-x: 16.7%;  /* Bal nyíl vízszintes pozíciója */
+  --arrow-left-y: 82%;   /* Bal nyíl függőleges pozíciója */
+  --arrow-right-x: calc(100% - 51.3%); /* Jobb nyíl vízszintes pozíciója */
+  --arrow-right-y: 82%;  /* Jobb nyíl függőleges pozíciója */
+}
+
+.custom-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+/* Bal nyíl */
+.custom-button.left {
+  left: var(--arrow-left-x);
+  top: var(--arrow-left-y);
+}
+
+/* Jobb nyíl */
+.custom-button.right {
+  left: var(--arrow-right-x);
+  top: var(--arrow-right-y);
+}
+
+.custom-button img {
+  width: 35px;
+  height: 35px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
