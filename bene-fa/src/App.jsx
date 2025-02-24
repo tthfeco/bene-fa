@@ -12,7 +12,7 @@ function App() {
     <div style={{ margin: 0, padding: 0, overflowX: "hidden", width: "100vw" }}>
       <Header />
       <Banner />      
-      <div style={{ height: "90vh" }}></div> {/* Üres hely a banner után */}
+      <div style={{ height: "100vh" }}></div> {/* Üres hely a banner után */}
       <Categories />
       <ReferenceComponent />
       <MainSwiper />
