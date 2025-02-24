@@ -62,41 +62,49 @@
 .swiper-slide-content:nth-child(3)::before{
   content: "";
   position: absolute;
-  width: 1rem;
-  height: 1rem;
-  background-color: red;
+  margin-top: 14.054rem;
+  margin-left: 16.3rem;
+  width: 25px !important;
+  height: 25px !important;
+  background-color: transparent;
+  border-bottom-right-radius: 12.5px;
+  box-shadow: 0.35rem 0.2rem white;
 }
 
 /* Az első elem bal felső, jobb felső és jobb alsó sarka */
 .swiper-slide-content:nth-child(1)::before {
   top: 0;
   left: 0;
+  width: 20px;
+  height: 20px;
 }
 
 .swiper-slide-content:nth-child(1)::after {
   content: "";
   position: absolute;
-  width: 60px; /* Kerekítés mérete, állítható */
-  height: 60px;
+  width: 50px; /* Kerekítés mérete, állítható */
+  height: 50px;
   background: white;
   bottom: 0;
   right: 0;
-  clip-path: circle(80% at bottom right); /* Simább ív a jobb alsó sarokban */
+  border-top-left-radius: 2rem;
 }
 
 /* A harmadik elem bal felső, jobb felső és jobb alsó sarka */
 .swiper-slide-content:nth-child(3)::before {
   top: 0;
   left: 0;
+  width: 20px;
+  height: 20px;
 }
 
 .swiper-slide-content:nth-child(3)::after {
   content: "";
   position: absolute;
-  width: 60px; /* Kerekítés mérete, állítható */
-  height: 60px;
+  width: 50px; /* Kerekítés mérete, állítható */
+  height: 50px;
   background: white;
   bottom: 0;
   right: 0;
-  clip-path: circle(80% at bottom right); /* Simább ív a jobb alsó sarokban */
+  border-top-left-radius: 2rem;
 }
