@@ -50,13 +50,6 @@
   z-index: 10;
 }
 
-.swiper-button-prev img,
-.swiper-button-next img {
-  width: 30px !important;
-  height: 30px !important;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-}
-
 /* Piros pszeudo elemek az első és harmadik elemhez (bal felső, jobb felső, jobb alsó sarok) */
 .swiper-slide-content:nth-child(1)::before,
 .swiper-slide-content:nth-child(3)::before{
@@ -135,7 +128,15 @@
   z-index: 10;
   position: absolute;
   transform: translateY(-50%);
+  outline: none; /* Alap fókusz keret eltávolítása */
 }
+
+/* Eltávolítja az alapértelmezett fókuszkeretet kattintás után */
+.custom-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 
 /* Bal nyíl */
 .custom-button.left {
@@ -154,3 +155,4 @@
   height: 35px;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
+
