@@ -108,3 +108,15 @@
   right: 0;
   border-top-left-radius: 2rem;
 }
+
+/* "Prios" extra dekoráció az első és harmadik slide-okhoz */
+.swiper-slide-content .prios {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000; /* Példa: piros háttérszín */
+  border-radius: 50%; /* Kerek forma */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}

@@ -18,6 +18,7 @@ const images = [
   { src: Ajto1, text: "Beltéri ajtó 1" },
   { src: KonyhaOldalso, text: "Oldalsó konyhai nézet" },
   { src: Ajto2, text: "Beltéri ajtó 2" },
+  // További képek itt...
 ];
 
 const MainSwiper = () => {
@@ -35,6 +36,9 @@ const MainSwiper = () => {
     return images[(index + offset) % images.length];
   };
 
+  // Dinamikusan számoljuk ki a látható slide-ok számát (max. 4)
+  const visibleSlidesCount = Math.min(4, images.length);
+
   return (
     <div className="swiper-container">
       <button className="swiper-button-prev" onClick={prevSlide}>
@@ -42,15 +46,19 @@ const MainSwiper = () => {
       </button>
 
       <div className="swiper-wrapper">
-        {[0, 1, 2, 3].map((offset) => (
-          <div
-            key={offset}
-            className={`swiper-slide-content ${offset === 1 ? "large" : "small"}`}
-            style={{ backgroundImage: `url(${getImage(offset).src})` }}
-          >
-            <div className="image-text">{getImage(offset).text}</div>
-          </div>
-        ))}
+        {[...Array(visibleSlidesCount)].map((_, offset) => {
+          const image = getImage(offset);
+          return (
+            <div
+              key={offset}
+              className={`swiper-slide-content ${offset === 1 ? "large" : "small"}`}
+              style={{ backgroundImage: `url(${image.src})` }}
+            >
+              {(offset === 0 || offset === 2) && <div className="prios"></div>}
+              <div className="image-text">{image.text}</div>
+            </div>
+          );
+        })}
       </div>
 
       <button className="swiper-button-next" onClick={nextSlide}>
