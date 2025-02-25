@@ -278,21 +278,25 @@
 
 .category-extra {
   position: absolute !important;
-  width: 20px;
-  height: 20px;
-  background: red;
-  bottom: 15%;
-  right: -10px;
+  width: 8% !important;
+  height: 8% !important;
+  bottom: 39.5%;
+  right: 0%;
+  background: transparent;
   z-index: 10; /* Adj neki magasabb rétegszintet */
+  border-bottom-right-radius: 60%;
+  box-shadow: 0.35rem 0.25rem white;
 }
 
 .category-image::before {
-  content: "";
+  content: "" !important;
   position: absolute !important;
-  width: 12%;
-  height: 12%;
-  background: red;
-  top: 90%;
-  left: 70%;
-  z-index: 15; /* Biztosítsd, hogy az ::before előrébb legyen */
+  width: 8% !important;
+  height: 9% !important;
+  top: 91%;
+  left: 66%;
+  background: transparent;
+  z-index: 10; /* Biztosítsd, hogy az ::before előrébb legyen */
+  border-bottom-right-radius: 60%;
+  box-shadow: 0.35rem 0.25rem white;
 }
