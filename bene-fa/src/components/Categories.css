@@ -118,6 +118,7 @@
 }
 
 .category-image img {
+  border-radius: 15px;
   width: 100%;
   height: 100%;
   object-fit: cover; /* A kép kitölti a konténert, de nem torzul */
