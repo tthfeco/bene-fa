@@ -301,3 +301,60 @@
   border-bottom-right-radius: 60%;
   box-shadow: 0.35rem 0.25rem white;
 }
+
+@media (max-width: 1150px) {
+  .categories {
+    flex-wrap: wrap; /* A kategóriák törjenek új sorba, ha nem férnek el egy sorban */
+    justify-content: center; /* Középre igazítás */
+    gap: 20px; /* Kategóriák közötti távolság */
+  }
+
+  .category {
+    width: 45%; /* Két oszlopos elrendezés */
+    max-width: 250px; /* Kategória maximális szélessége */
+  }
+
+  .category-image {
+    height: 140px; /* Képek méretének csökkentése */
+  }
+
+  .category-arrow {
+    top: 110px; /* Nyíl pozíciójának módosítása */
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .category-text h3 {
+    font-size: 1rem; /* Kategórianév kisebb méretben */
+  }
+
+  .category p {
+    font-size: 0.8rem; /* Leírás betűmérete kisebb */
+  }
+}
+
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column; /* Egy oszlopba rendezés */
+    align-items: center;
+  }
+
+  .category {
+    width: 90%; /* Szinte teljes szélesség kihasználása */
+    max-width: 400px; /* Max szélesség beállítása */
+    margin-bottom: 20px;
+  }
+
+  .category-image {
+    height: 160px; /* Nagyobb képek egy oszlopos nézetben */
+  }
+
+  .category-arrow {
+    top: 135px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+}
