@@ -222,60 +222,7 @@
   padding-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .categories {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 5%;
-  }
 
-  .category {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 20px;
-  }
-
-  .category-image {
-    height: 120px;
-    width: 100%;
-  }
-
-  .category-text {
-    text-align: center;
-  }
-
-  .category-arrow {
-    top: 95px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    font-size: 1rem;
-  }
-
-  /* Almenü mobil nézetben */
-  .submenu {
-    position: static;
-    transform: none;
-    width: 100%;
-    text-align: center;
-    display: none;
-  }
-
-  .submenu-item {
-    text-align: center;
-  }
-
-  .submenu.second-level {
-    position: static;
-    left: auto;
-    display: none;
-  }
-
-  .category:hover .submenu,
-  .submenu-item:hover .second-level {
-    display: flex;
-  }
-}
 
 .category-extra {
   position: absolute !important;
