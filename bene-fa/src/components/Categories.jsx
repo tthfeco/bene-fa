@@ -9,11 +9,9 @@ import redony from '../assets/Categories_images/kategoria_redony.jpg';
 export default function Categories() {
   const [showDoorOptions, setShowDoorOptions] = useState(false);
   const [showOutdoorDoorOptions, setShowOutdoorDoorOptions] = useState(false);
-  const [showWindowOptions, setShowWindowOptions] = useState(false);
-  const [showWoodenWindowOptions, setShowWoodenWindowOptions] = useState(false);
 
   const categories = [
-    { name: "ABLAK", description: "", link: "#", image: ablak, hasSubmenu: "window" },
+    { name: "ABLAK", description: "", link: "#", image: ablak },
     { name: "AJTÓ", description: "beltéri, kültéri", link: "#", image: ajto, hasSubmenu: "door" },
     { name: "REDŐNY", description: "", link: "#", image: redony },
     { name: "KONYHABÚTOR", description: "", link: "#", image: konyha },
@@ -24,15 +22,14 @@ export default function Categories() {
     <section className="categories">
       {categories.map((category, index) => (
         <div key={index} className="category">
+          <div className="category-extra"></div>
           <div
             className="category-image"
             onMouseEnter={() => {
               if (category.hasSubmenu === "door") setShowDoorOptions(true);
-              if (category.hasSubmenu === "window") setShowWindowOptions(true);
             }}
             onMouseLeave={() => {
               if (category.hasSubmenu === "door") setShowDoorOptions(false);
-              if (category.hasSubmenu === "window") setShowWindowOptions(false);
             }}
           >
             {category.image && <img src={category.image} alt={category.name} />}
@@ -58,28 +55,6 @@ export default function Categories() {
                 </div>
               </div>
             )}
-
-            {/* ABLAK ALMENÜ */}
-            {category.hasSubmenu === "window" && showWindowOptions && (
-              <div className="submenu">
-                <a href="#">Műanyag ablak</a>
-                <div
-                  className="submenu-item"
-                  onMouseEnter={() => setShowWoodenWindowOptions(true)}
-                  onMouseLeave={() => setShowWoodenWindowOptions(false)}
-                >
-                  Fa ablak
-                  {showWoodenWindowOptions && (
-                    <div className="submenu second-level">
-                      <a href="#">Hagyományos</a>
-                      <a href="#">Modern</a>
-                      <a href="#">Rusztikus</a>
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
-
           </div>
           <div className="category-text">
             <h3>{category.name}</h3>
