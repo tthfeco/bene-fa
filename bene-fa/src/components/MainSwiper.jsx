@@ -14,11 +14,10 @@ import KonyhaOldalso from "../assets/Reference_gallery/Konyha_oldalso.jpg";
 import Ajto2 from "../assets/Reference_gallery/ajto2.jpg";
 
 const images = [
-  { src: KonyhaFerenczy, text: "Ferenczy konyha" },
-  { src: Ajto1, text: "Beltéri ajtó 1" },
-  { src: KonyhaOldalso, text: "Oldalsó konyhai nézet" },
-  { src: Ajto2, text: "Beltéri ajtó 2" },
-  // További képek itt...
+  { src: KonyhaFerenczy, title: "Ferenczy Konyha", text: "Modern konyhabútor dizájn" },
+  { src: Ajto1, title: "Beltéri Ajtó 1", text: "Elegáns és minimalista ajtó" },
+  { src: KonyhaOldalso, title: "Oldalsó Konyhai Nézet", text: "Konyhabútor oldalnézetből" },
+  { src: Ajto2, title: "Beltéri Ajtó 2", text: "Klasszikus fa ajtó stílus" },
 ];
 
 const MainSwiper = () => {
@@ -36,12 +35,10 @@ const MainSwiper = () => {
     return images[(index + offset) % images.length];
   };
 
-  // Dinamikusan számoljuk ki a látható slide-ok számát (max. 4)
   const visibleSlidesCount = Math.min(4, images.length);
 
   return (
     <div className="swiper-container">
-      {/* Bal nyíl */}
       <button className="custom-button left" onClick={prevSlide}>
         <img src={leftArrow} alt="Previous" />
       </button>
@@ -56,13 +53,15 @@ const MainSwiper = () => {
               style={{ backgroundImage: `url(${image.src})` }}
             >
               {(offset === 0 || offset === 2) && <div className="prios"></div>}
-              <div className="image-text">{image.text}</div>
+              <div className="image-info">
+                <div className="image-title">{image.title}</div>
+                <div className="image-text">{image.text}</div>
+              </div>
             </div>
           );
         })}
       </div>
 
-      {/* Jobb nyíl */}
       <button className="custom-button right" onClick={nextSlide}>
         <img src={rightArrow} alt="Next" />
       </button>
