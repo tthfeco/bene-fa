@@ -333,10 +333,46 @@
   }
 
   .category-arrow {
-    top: 135px;
-    right: 10px;
-    width: 35px;
-    height: 35px;
+    top: 85.5%;
+    right: 0%;
+    width: 15%;
+    height: 11%;
     font-size: 1.2rem;
+  }
+
+  .category-image::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 8% !important;
+    height: 9% !important;
+    top: 90.9%;
+    left: 72.3%;
+    background: transparent;
+    z-index: 10; /* Biztosítsd, hogy az ::before előrébb legyen */
+    border-bottom-right-radius: 60%;
+    box-shadow: 0.35rem 0.25rem white;
+  }
+
+  .category-extra {
+    position: absolute !important;
+    width: 8% !important;
+    height: 8% !important;
+    bottom: 26.9%;
+    right: 12.5%;
+    background: transparent;
+    z-index: 10; /* Adj neki magasabb rétegszintet */
+    border-bottom-right-radius: 60%;
+    box-shadow: 0.35rem 0.3rem white;
+  }
+
+  .category-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 20%;
+    background: white;
+    border-top-left-radius: 75%;
   }
 }
