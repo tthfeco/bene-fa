@@ -222,8 +222,6 @@
   padding-bottom: 10px;
 }
 
-
-
 .category-extra {
   position: absolute !important;
   width: 8% !important;
@@ -253,7 +251,7 @@
   .categories {
     flex-wrap: wrap; /* A kategóriák törjenek új sorba, ha nem férnek el egy sorban */
     justify-content: center; /* Középre igazítás */
-    gap: 20px; /* Kategóriák közötti távolság */
+    gap: 25px; /* Kategóriák közötti távolság */
   }
 
   .category {
@@ -262,13 +260,13 @@
   }
 
   .category-image {
-    height: 140px; /* Képek méretének csökkentése */
+    height: 300px; /* Képek méretének csökkentése */
   }
 
   .category-arrow {
-    top: 110px; /* Nyíl pozíciójának módosítása */
-    width: 30px;
-    height: 30px;
+    top: 85%; /* Nyíl pozíciójának módosítása */
+    width: 15%;
+    height: 12.5%;
     font-size: 1rem;
   }
 
@@ -278,6 +276,42 @@
 
   .category p {
     font-size: 0.8rem; /* Leírás betűmérete kisebb */
+  }
+
+  .category-image::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 8% !important;
+    height: 9% !important;
+    top: 91%;
+    left: 71.1%;
+    background: transparent;
+    z-index: 10; /* Biztosítsd, hogy az ::before előrébb legyen */
+    border-bottom-right-radius: 60%;
+    box-shadow: 0.35rem 0.25rem white;
+  }
+
+  .category-extra {
+    position: absolute !important;
+    width: 8% !important;
+    height: 8% !important;
+    bottom: 30.3%;
+    right: 0%;
+    background: transparent;
+    z-index: 10; /* Adj neki magasabb rétegszintet */
+    border-bottom-right-radius: 60%;
+    box-shadow: 0.35rem 0.25rem white;
+  }
+
+  .category-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 21%;
+    height: 21%;
+    background: white;
+    border-top-left-radius: 75%;
   }
 }
 
@@ -294,7 +328,8 @@
   }
 
   .category-image {
-    height: 160px; /* Nagyobb képek egy oszlopos nézetben */
+    width: 75%;
+    height: 400px; /* Nagyobb képek egy oszlopos nézetben */
   }
 
   .category-arrow {
