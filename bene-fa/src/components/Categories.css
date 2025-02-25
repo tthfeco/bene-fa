@@ -276,21 +276,23 @@
   }
 }
 
-.category::before {
-  content: "";
+.category-extra {
+  position: absolute !important;
   width: 20px;
   height: 20px;
   background: red;
-  position: absolute;
-  top: -10px;
-  left: -10px;
+  bottom: 15%;
+  right: -10px;
+  z-index: 10; /* Adj neki magasabb rétegszintet */
 }
 
-.category-extra {
-  width: 20px;
-  height: 20px;
+.category-image::before {
+  content: "";
+  position: absolute !important;
+  width: 12%;
+  height: 12%;
   background: red;
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
+  top: 90%;
+  left: 70%;
+  z-index: 15; /* Biztosítsd, hogy az ::before előrébb legyen */
 }
