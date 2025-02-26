@@ -66,13 +66,57 @@
 
 .banner-button::after {
   content: "➝"; /* Jobbra nyíl */
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 1.2rem;
 }
 
 .banner-button:hover {
   background: white;
   color: black;
+}
+
+/* 1150px alatti méretek */
+@media (max-width: 1150px) {
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner p {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .banner-button {
+    font-size: 1rem;
+    padding: 3px 12px;
+  }
+
+  .banner-button::after {
+    margin-left: 8px;
+    font-size: 1rem;
+  }
+}
+
+/* 760px alatti méretek */
+@media (max-width: 760px) {
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  .banner-button {
+    font-size: 0.8rem;
+    padding: 2px 10px;
+  }
+
+  .banner-button::after {
+    margin-left: 6px;
+    font-size: 0.9rem;
+  }
 }
 
 /* Animáció a szöveg megjelenéséhez */
