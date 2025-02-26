@@ -17,8 +17,6 @@
   border-bottom-left-radius: 100px; /* Lekerekítés bal alsó sarokban */
 }
 
-
-
 .banner::before {
   content: "";
   position: absolute;
@@ -39,29 +37,41 @@
 }
 
 .banner h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 3%;
 }
 
 .banner p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .banner-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: white;
-  color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 4px 15px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 50px; /* Ovális alak */
   transition: 0.3s;
+  position: relative;
+}
+
+.banner-button::after {
+  content: "➝"; /* Jobbra nyíl */
+  margin-left: 20px;
+  font-size: 1.2rem;
 }
 
 .banner-button:hover {
-  background: #ddd;
+  background: white;
+  color: black;
 }
 
 /* Animáció a szöveg megjelenéséhez */
