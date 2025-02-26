@@ -210,6 +210,13 @@
     width: 28px;
     height: 28px;
   }
+
+  :root {
+    --arrow-left-x: 15.5%;  /* Bal nyíl vízszintes pozíciója */
+    --arrow-left-y: 82.2%;   /* Bal nyíl függőleges pozíciója */
+    --arrow-right-x: calc(100% - 51.5%); /* Jobb nyíl vízszintes pozíciója */
+    --arrow-right-y: 82.2%;  /* Jobb nyíl függőleges pozíciója */
+  }
 }
 
 @media (max-width: 760px) {
