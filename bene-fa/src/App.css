@@ -18,6 +18,15 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Megakadályozza a vízszintes görgetést mindenhol */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
