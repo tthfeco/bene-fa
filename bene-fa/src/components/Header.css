@@ -1,6 +1,6 @@
 header {
-  position: fixed;
-  top: 10px; /* Kis eltartás a fejléc fölött */
+  position: absolute;
+  top: 10px;
   left: 0;
   width: 100%;
   display: flex;
@@ -10,18 +10,18 @@ header {
   color: white;
   z-index: 100;
   background: transparent;
-  box-sizing: border-box; /* Padding nem növeli a szélességet */
+  box-sizing: border-box;
 }
-
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
+/* Navigáció alapértelmezett beállításai */
 .nav {
   display: flex;
-  gap: 80px; /* Növeli a távolságot a linkek között */
+  gap: 80px;
   padding-right: 80px;
 }
 
@@ -29,13 +29,63 @@ header {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  padding: 5px 30px; /* Alapértelmezett padding */
-  border-radius: 50px; /* Lekerekített forma */
-  border: 3px solid transparent; /* Láthatatlan keret, hogy ne változzon a méret */
+  padding: 5px 30px;
+  border-radius: 50px;
+  border: 3px solid transparent;
 }
 
 .nav a:hover {
-  border: 3px solid white; /* Fehér körvonal megjelenítése */
-  cursor: pointer; /* Kattintható egérmutató */
+  border: 3px solid white;
+  cursor: pointer;
 }
 
+/* Hamburger menü alapértelmezés szerint rejtve */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Reszponzív beállítások 1150px alatt */
+@media screen and (max-width: 1150px) {
+  .logo {
+    font-size: 1rem; /* Kisebb méret */
+  }
+
+  .nav {
+    display: none; /* Alapértelmezetten elrejtjük a navigációt */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+
+  .nav a {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  /* Ha a hamburger menü aktív, akkor jelenjen meg a navigáció */
+  .nav.active {
+    display: flex;
+  }
+
+  /* Hamburger menü megjelenítése */
+  .hamburger-menu {
+    display: flex;
+  }
+}
