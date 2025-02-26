@@ -219,8 +219,8 @@
   }
 
   .swiper-slide-content.large {
-    width: 260px;
-    height: 280px;
+    width: 280px;
+    height: 300px;
   }
 
   .image-title {
@@ -235,5 +235,20 @@
     width: 24px;
     height: 24px;
   }
-}
 
+  .image-info {
+    position: absolute;
+    bottom: -35%; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 100%;
+  }
+
+  :root {
+    --arrow-left-x: 13.5%;  /* Bal nyíl vízszintes pozíciója */
+    --arrow-left-y: 80%;   /* Bal nyíl függőleges pozíciója */
+    --arrow-right-x: calc(100% - 52%); /* Jobb nyíl vízszintes pozíciója */
+    --arrow-right-y: 80%;  /* Jobb nyíl függőleges pozíciója */
+  }
+}
