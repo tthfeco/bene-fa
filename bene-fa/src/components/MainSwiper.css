@@ -259,3 +259,48 @@
     --arrow-right-y: 80%;  /* Jobb nyíl függőleges pozíciója */
   }
 }
+
+@media (max-width: 560px) {
+  .swiper-slide-content.small {
+    width: 150px;
+    height: 150px;
+  }
+
+  .swiper-slide-content.large {
+    width: 260px;
+    height: 270px;
+  }
+
+  .image-title {
+    font-size: 13px;
+  }
+
+  .image-text {
+    font-size: 11px;
+  }
+
+  .custom-button img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .image-info {
+    position: absolute;
+    bottom: -40%; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 100%;
+  }
+
+  .swiper-slide-content.large .image-info {
+    bottom: -24%; /* Csökkentett hely csak a large képeknél */
+  }
+
+  :root {
+    --arrow-left-x: 11%;  /* Bal nyíl vízszintes pozíciója */
+    --arrow-left-y: 78%;   /* Bal nyíl függőleges pozíciója */
+    --arrow-right-x: calc(100% - 52%); /* Jobb nyíl vízszintes pozíciója */
+    --arrow-right-y: 78%;  /* Jobb nyíl függőleges pozíciója */
+  }
+}
