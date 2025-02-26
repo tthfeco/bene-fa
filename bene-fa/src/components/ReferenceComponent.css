@@ -4,8 +4,8 @@
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 32px;
-  margin-left: 15%; /* Bal oldali eltartás a képernyő szélétől */
-  color: black; /* A szöveg színének beállítása */
+  margin-left: 15%;
+  color: black;
   margin-bottom: 100px;
 }
 
@@ -29,3 +29,55 @@
   flex-grow: 1;
   margin-left: 10px;
 }
+
+/* 1150px alatti nézet */
+@media (max-width: 1150px) {
+  .reference-container {
+    font-size: 26px; /* Kisebb betűméret */
+    margin-left: 10%; /* Csökkentett eltartás */
+  }
+  .reference-title {
+    font-size: 24px;
+  }
+  .reference-number {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 760px) {
+  .reference-container {
+    font-size: 20px; /* Kisebb betűméret */
+    margin-left: 10%; /* Kisebb margó */
+    margin-right: 0%;
+    display: flex;
+    flex-wrap: nowrap; /* Megakadályozza a törést */
+    justify-content: center; /* Középre igazítás */
+    align-items: center;
+  }
+
+  .reference-title {
+    font-size: 18px;
+    margin-right: 10px; /* Kisebb tér a szám előtt */
+    white-space: nowrap; /* Megakadályozza a sortörést */
+  }
+
+  .reference-line-container {
+    display: flex;
+    flex-wrap: nowrap; /* Megakadályozza a törést */
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .reference-number {
+    font-size: 18px;
+    white-space: nowrap; /* Megakadályozza a sortörést */
+    margin-right: 10px;
+  }
+
+  .reference-line {
+    border-bottom: 2px solid black;
+    flex-grow: 1;
+    min-width: 50px; /* Biztosítja, hogy a vonal ne tűnjön el */
+  }
+}
+
