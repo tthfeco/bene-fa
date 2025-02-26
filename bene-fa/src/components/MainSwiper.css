@@ -186,3 +186,54 @@
 .swiper-slide-content.large .image-info {
   bottom: -16.5%; /* Csökkentett hely csak a large képeknél */
 }
+
+@media (max-width: 1150px) {
+  .swiper-slide-content.small {
+    width: 240px;
+    height: 240px;
+  }
+
+  .swiper-slide-content.large {
+    width: 340px;
+    height: 360px;
+  }
+
+  .image-title {
+    font-size: 16px;
+  }
+
+  .image-text {
+    font-size: 13px;
+  }
+
+  .custom-button img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 760px) {
+  .swiper-slide-content.small {
+    width: 180px;
+    height: 180px;
+  }
+
+  .swiper-slide-content.large {
+    width: 260px;
+    height: 280px;
+  }
+
+  .image-title {
+    font-size: 14px;
+  }
+
+  .image-text {
+    font-size: 12px;
+  }
+
+  .custom-button img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
