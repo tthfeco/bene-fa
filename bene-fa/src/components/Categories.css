@@ -321,6 +321,12 @@
     background: white;
     border-top-left-radius: 75%;
   }
+
+  /* Ha csak a második kategória csúszott el */
+.category:nth-child(2) .category-extra {
+  bottom: 31% !important; /* Állítsd be manuálisan */
+  background-color: transparent;
+}
 }
 
 @media (max-width: 768px) {
@@ -383,4 +389,10 @@
     background: white;
     border-top-left-radius: 75%;
   }
+
+    /* Ha csak a második kategória csúszott el */
+.category:nth-child(2) .category-extra {
+  bottom: 28.4% !important; /* Állítsd be manuálisan */
+  background-color: transparent;
+}
 }
