@@ -247,6 +247,14 @@
   box-shadow: 0.35rem 0.25rem white;
 }
 
+/* Ha csak a második kategória csúszott el */
+.category:nth-child(2) .category-extra {
+  bottom: 43.4% !important; /* Állítsd be manuálisan */
+  background-color: transparent;
+}
+
+
+
 @media (max-width: 1150px) {
   .categories {
     flex-wrap: wrap; /* A kategóriák törjenek új sorba, ha nem férnek el egy sorban */
@@ -286,7 +294,7 @@
     top: 91%;
     left: 71.1%;
     background: transparent;
-    z-index: 10; /* Biztosítsd, hogy az ::before előrébb legyen */
+    z-index: 10 !important; /* Biztosítsd, hogy az ::before előrébb legyen */
     border-bottom-right-radius: 60%;
     box-shadow: 0.35rem 0.25rem white;
   }
@@ -298,7 +306,7 @@
     bottom: 30.3%;
     right: 0%;
     background: transparent;
-    z-index: 10; /* Adj neki magasabb rétegszintet */
+    z-index: 10 !important; /* Adj neki magasabb rétegszintet */
     border-bottom-right-radius: 60%;
     box-shadow: 0.35rem 0.25rem white;
   }
