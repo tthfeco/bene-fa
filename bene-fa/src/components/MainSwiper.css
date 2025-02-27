@@ -211,12 +211,76 @@
     height: 28px;
   }
 
-  :root {
-    --arrow-left-x: 15.5%;  /* Bal nyíl vízszintes pozíciója */
-    --arrow-left-y: 82.2%;   /* Bal nyíl függőleges pozíciója */
-    --arrow-right-x: calc(100% - 51.5%); /* Jobb nyíl vízszintes pozíciója */
-    --arrow-right-y: 82.2%;  /* Jobb nyíl függőleges pozíciója */
-  }
+  /* Piros pszeudo elemek az első és harmadik elemhez (bal felső, jobb felső, jobb alsó sarok) */
+.swiper-slide-content:nth-child(1)::before,
+.swiper-slide-content:nth-child(3)::before{
+  content: "";
+  position: absolute;
+  top: 74.599% !important;
+  left: 91.3% !important;
+  width: 8.8% !important;
+  height: 8.8% !important;
+  background-color: transparent;
+  border-bottom-right-radius: 60%;
+  box-shadow: 0.35rem 0.25rem white;
+}
+
+/* Az első elem bal felső, jobb felső és jobb alsó sarka */
+.swiper-slide-content:nth-child(1)::before {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-slide-content:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 16.15%; /* Kerekítés mérete, állítható */
+  height: 16.8%;
+  background: white;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 1.6rem;
+}
+
+/* A harmadik elem bal felső, jobb felső és jobb alsó sarka */
+.swiper-slide-content:nth-child(3)::before {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-slide-content:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 16.15%; /* Kerekítés mérete, állítható */
+  height: 16.8%;
+  background: white;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 1.6rem;
+}
+
+/* "Prios" extra dekoráció az első és harmadik slide-okhoz */
+.swiper-slide-content .prios {
+  position: absolute;
+  bottom: 0% !important;
+  right: 16.1% !important;
+  width: 8% !important;
+  height: 7% !important;
+  background-color: transparent;
+  border-bottom-right-radius: 60%;
+  box-shadow: 0.35rem 0.25rem white;
+}
+
+:root {
+  --arrow-left-x: 15.5%;  /* Bal nyíl vízszintes pozíciója */
+  --arrow-left-y: 82.2%;   /* Bal nyíl függőleges pozíciója */
+  --arrow-right-x: calc(100% - 51.5%); /* Jobb nyíl vízszintes pozíciója */
+  --arrow-right-y: 82.2%;  /* Jobb nyíl függőleges pozíciója */
+}
 }
 
 @media (max-width: 760px) {
@@ -259,7 +323,7 @@
     width: 24px;
     height: 24px;
   }
-  
+
   .swiper-slide-content.small {
     width: 180px;
     height: 180px;
@@ -292,10 +356,74 @@
     width: 100%;
   }
 
+    /* Piros pszeudo elemek az első és harmadik elemhez (bal felső, jobb felső, jobb alsó sarok) */
+.swiper-slide-content:nth-child(1)::before,
+.swiper-slide-content:nth-child(3)::before{
+  content: "";
+  position: absolute;
+  top: 74.599% !important;
+  left: 91.3% !important;
+  width: 8.8% !important;
+  height: 8.8% !important;
+  background-color: transparent;
+  border-bottom-right-radius: 60%;
+  box-shadow: 0.35rem 0.25rem white;
+}
+
+/* Az első elem bal felső, jobb felső és jobb alsó sarka */
+.swiper-slide-content:nth-child(1)::before {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-slide-content:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 16.15%; /* Kerekítés mérete, állítható */
+  height: 16.8%;
+  background: white;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 1.6rem;
+}
+
+/* A harmadik elem bal felső, jobb felső és jobb alsó sarka */
+.swiper-slide-content:nth-child(3)::before {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-slide-content:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 16.15%; /* Kerekítés mérete, állítható */
+  height: 16.8%;
+  background: white;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 1.6rem;
+}
+
+/* "Prios" extra dekoráció az első és harmadik slide-okhoz */
+.swiper-slide-content .prios {
+  position: absolute;
+  bottom: 0% !important;
+  right: 16.1% !important;
+  width: 8% !important;
+  height: 7% !important;
+  background-color: transparent;
+  border-bottom-right-radius: 60%;
+  box-shadow: 0.35rem 0.25rem white;
+}
+
   :root {
-    --arrow-left-x: 13.5%;  /* Bal nyíl vízszintes pozíciója */
+    --arrow-left-x: 20.8%;  /* Bal nyíl vízszintes pozíciója */
     --arrow-left-y: 80%;   /* Bal nyíl függőleges pozíciója */
-    --arrow-right-x: calc(100% - 52%); /* Jobb nyíl vízszintes pozíciója */
+    --arrow-right-x: calc(100% - 8.2%); /* Jobb nyíl vízszintes pozíciója */
     --arrow-right-y: 80%;  /* Jobb nyíl függőleges pozíciója */
   }
 }
@@ -338,7 +466,7 @@
   }
 
   :root {
-    --arrow-left-x: 11%;  /* Bal nyíl vízszintes pozíciója */
+    --arrow-left-x: 20p;  /* Bal nyíl vízszintes pozíciója */
     --arrow-left-y: 78%;   /* Bal nyíl függőleges pozíciója */
     --arrow-right-x: calc(100% - 52%); /* Jobb nyíl vízszintes pozíciója */
     --arrow-right-y: 78%;  /* Jobb nyíl függőleges pozíciója */
