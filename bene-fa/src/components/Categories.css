@@ -333,6 +333,8 @@
   .categories {
     flex-direction: column; /* Egy oszlopba rendezés */
     align-items: center;
+    width: 100%;
+    margin-left: 1.1%;
   }
 
   .category {
