@@ -284,6 +284,16 @@
 }
 
 @media (max-width: 760px) {
+  .swiper-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .swiper-wrapper {
     gap: 30px;
   }
