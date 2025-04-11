@@ -1,0 +1,109 @@
+import door0 from "../assets/doors/0.svg";
+import door1 from "../assets/doors/1.svg";
+import door2 from "../assets/doors/2.svg";
+import door3 from "../assets/doors/3.svg";
+import door4 from "../assets/doors/4.svg";
+import door5 from "../assets/doors/5.svg";
+import door6 from "../assets/doors/6.svg";
+import door7 from "../assets/doors/7.svg";
+import door8 from "../assets/doors/8.svg";
+import door9 from "../assets/doors/9.svg";
+import door10 from "../assets/doors/10.svg";
+import door11 from "../assets/doors/11.svg";
+import door12 from "../assets/doors/12.svg";
+import door13 from "../assets/doors/13.svg";
+import door14 from "../assets/doors/14.svg";
+import door15 from "../assets/doors/15.svg";
+import door16 from "../assets/doors/16.svg";
+import door17 from "../assets/doors/17.svg";
+import door18 from "../assets/doors/18.svg";
+import door19 from "../assets/doors/19.svg";
+import door20 from "../assets/doors/20.svg";
+
+const mainDoors = [
+  {
+    id: "01",
+    image: door0
+  },  
+  {
+    id: "2",
+    image: door1
+  },
+  {
+    id: "3",
+    image: door2
+  },
+  {
+    id: "4",
+    image: door3
+  },
+  {
+    id: "5",
+    image: door4
+  },
+  {
+    id: "6",
+    image: door5
+  },
+  {
+    id: "7",
+    image: door6
+  },
+  {
+    id: "8",
+    image: door7
+  },
+  {
+    id: "9",
+    image: door8
+  },
+  {
+    id: "10",
+    image: door9
+  },
+  {
+    id: "11",
+    image: door10
+  },
+  {
+    id: "12",
+    image: door11
+  },
+  {
+    id: "13",
+    image: door12
+  },
+  {
+    id: "14",
+    image: door13
+  },
+  {
+    id: "15",
+    image: door14
+  },
+  {
+    id: "16",
+    image: door15
+  },
+  {
+    id: "17",
+    image: door16
+  },
+  {
+    id: "18",
+    image: door17
+  },
+  {
+    id: "19",
+    image: door18
+  },
+  {
+    id: "20",
+    image: door19
+  },
+  {
+    id: "21",
+    image: door20
+  }
+]
+
