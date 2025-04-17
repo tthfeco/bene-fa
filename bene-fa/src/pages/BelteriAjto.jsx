@@ -1,13 +1,13 @@
-// src/pages/BelteriAjto.jsx
 import SubHeader from "../components/SubHeader.jsx";
+import "./BelteriAjto.css";
 
 export default function BelteriAjto() {
   return (
-    <div className="belteri-ajto-page">
+    <div className="interior-door-page">
       <SubHeader />
-      <div style={{ paddingTop: "100px" }}>
-        <h1>Beltéri ajtók</h1>
-        <p>Itt jelennek meg a beltéri ajtókkal kapcsolatos információk, képek, leírások stb.</p>
+      <div className="interior-door-container">
+        <div className="leftSide"></div>
+        <div className="rightSide"></div>
       </div>
     </div>
   );
