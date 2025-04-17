@@ -107,3 +107,4 @@ const mainDoors = [
   }
 ]
 
+export default mainDoors;
