@@ -15,7 +15,7 @@ import door13 from "/src/assets/doors/belteri/13.svg";
 import door14 from "/src/assets/doors/belteri/14.svg";
 import door15 from "/src/assets/doors/belteri/15.svg";
 import door16 from "/src/assets/doors/belteri/16.svg";
-import door17 from "/src/assets/doors/belteri/17.svg";
+import door17 from "/src/assets/doors/belteri/17.png";
 import door18 from "/src/assets/doors/belteri/18.svg";
 import door19 from "/src/assets/doors/belteri/19.svg";
 import door20 from "/src/assets/doors/belteri/20.svg";
