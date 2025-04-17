@@ -30,9 +30,7 @@ export default function SwiperLeft() {
 
   return (
     <div className="swiper-left-wrapper">
-      <div className="leftContent"></div>
-
-      <div className="rightContent">
+      <div className="swiper-gallery">
         <button className="arrow up" onClick={handlePrev}>↑</button>
         <div className="swiper-images">
           {visibleDoors.map((door, index) => (

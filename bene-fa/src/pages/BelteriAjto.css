@@ -1,6 +1,6 @@
 .interior-door-container {
     display: flex;
-    width: 100vw; /* vagy 100% */
+    width: 100vw;
     height: 100vh;
     box-sizing: border-box;
   }
@@ -9,6 +9,6 @@
   .rightSide {
     width: 50%;
     height: 100%;
-    border: 1px dashed #ccc; /* ideiglenes segédvonal */
+    border: 1px dashed #ccc; /* csak segéd */
   }
   
