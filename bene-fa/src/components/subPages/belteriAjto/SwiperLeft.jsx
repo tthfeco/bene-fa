@@ -12,15 +12,14 @@ export default function SwiperLeft() {
     setActiveDoorId(mainDoors[centerIndex].id);
   }, [startIndex]);
 
-  // Felcserélt működés
   const handlePrev = () => {
-    setStartIndex((prev) => (prev + 1) % mainDoors.length);
-  };
-
-  const handleNext = () => {
     setStartIndex((prev) =>
       (prev - 1 + mainDoors.length) % mainDoors.length
     );
+  };
+  
+  const handleNext = () => {
+    setStartIndex((prev) => (prev + 1) % mainDoors.length);
   };
 
   const visibleDoors = [

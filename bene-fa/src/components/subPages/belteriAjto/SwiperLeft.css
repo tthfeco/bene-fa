@@ -2,11 +2,20 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column; /* így kerülnek egymás fölé */
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
     padding-right: 5vh;
     box-sizing: border-box;
+    position: relative;
+  }
+  
+  .swiper-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
     position: relative;
   }
   
@@ -15,17 +24,20 @@
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     line-height: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 10;
   }
   
-  .swiper-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+  .arrow.up {
+    top: 0;
+  }
+  
+  .arrow.down {
+    bottom: 0;
   }
   
   .swiper-images {
@@ -34,12 +46,13 @@
     gap: 5vh;
     align-items: center;
     justify-content: center;
+    height: 100%;
   }
   
   .swiper-item img {
     width: 8vh;
     height: auto;
-    max-height: 25vh;
+    max-height: 20vh;
     object-fit: contain;
     transition: transform 0.5s ease;
   }
