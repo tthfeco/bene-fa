@@ -1,5 +1,6 @@
 import "./BelteriAjto.css";
 import SubHeader from "../components/SubHeader";
+import LargePreview from "../components/subPages/belteriAjto/LargePreview.jsx";
 import SwiperLeft from "../components/subPages/belteriAjto/SwiperLeft";
 
 export default function BelteriAjto() {
@@ -8,6 +9,7 @@ export default function BelteriAjto() {
       <SubHeader />
       <div className="interior-door-container">
         <div className="leftSide">
+        <LargePreview />
           <SwiperLeft />
         </div>
         <div className="rightSide">
