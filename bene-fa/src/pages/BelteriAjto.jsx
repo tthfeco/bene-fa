@@ -8,9 +8,11 @@ export default function BelteriAjto() {
     <div className="interior-door-page">
       <SubHeader />
       <div className="interior-door-container">
-        <div className="leftSide">
-        <LargePreview />
-          <SwiperLeft />
+      <div className="leftSide">
+        <div className="leftSide-inner">
+            <LargePreview />
+            <SwiperLeft />
+        </div>  
         </div>
         <div className="rightSide">
           {/* Ide jön a jobb oldali tartalom */}
