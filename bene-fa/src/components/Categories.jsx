@@ -1,5 +1,7 @@
+// src/components/Categories.jsx
 import "./Categories.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import eloteto from '../assets/Categories_images/kategoria_eloteto.jpg';
 import konyha from '../assets/Categories_images/kategoria_konyha.jpeg';
 import ajto from '../assets/Categories_images/kategoria_ajto.jpg';
@@ -38,7 +40,7 @@ export default function Categories() {
             {/* AJTÓ ALMENÜ */}
             {category.hasSubmenu === "door" && showDoorOptions && (
               <div className="submenu">
-                <a href="#">Beltéri ajtó</a>
+                <Link to="/belteri-ajto">Beltéri ajtó</Link>
                 <div
                   className="submenu-item"
                   onMouseEnter={() => setShowOutdoorDoorOptions(true)}

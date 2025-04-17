@@ -1,3 +1,5 @@
+// src/App.jsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Categories from "./components/Categories";
@@ -6,18 +8,29 @@ import ReferenceGallery from "./components/ReferenceGallery.jsx";
 import WeboldalLablec from "./components/WeboldalLablec.jsx";
 import MainGallery from "./components/MainGallery.jsx";
 import MainSwiper from "./components/MainSwiper.jsx";
+import BelteriAjto from "./pages/BelteriAjto"; // <-- új aloldal
 
-function App() {  
+function App() {
   return (
-    <div style={{ margin: 0, padding: 0, overflowX: "hidden", width: "100vw" }}>
+    <Router>
       <Header />
-      <Banner />      
-      <div style={{ height: "100vh" }}></div> {/* Üres hely a banner után */}
-      <Categories />
-      <ReferenceComponent />
-      <MainSwiper />
-      <WeboldalLablec />
-    </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Banner />
+              <div style={{ height: "100vh" }}></div>
+              <Categories />
+              <ReferenceComponent />
+              <MainSwiper />
+              <WeboldalLablec />
+            </>
+          }
+        />
+        <Route path="/belteri-ajto" element={<BelteriAjto />} />
+      </Routes>
+    </Router>
   );
 }
 
