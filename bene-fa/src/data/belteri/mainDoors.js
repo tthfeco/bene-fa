@@ -12,7 +12,7 @@ import door10 from "../assets/doors/belteri/10.svg";
 import door11 from "../assets/doors/belteri/11.svg";
 import door12 from "../assets/doors/belteri/12.svg";
 import door13 from "../assets/doors/belteri/13.svg";
-import door14 from "../assets/doors/belteri/12.svg";
+import door14 from "../assets/doors/belteri/14.svg";
 import door15 from "../assets/doors/belteri/15.svg";
 import door16 from "../assets/doors/belteri/16.svg";
 import door17 from "../assets/doors/belteri/17.svg";
