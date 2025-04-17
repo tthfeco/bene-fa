@@ -4,19 +4,19 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 12vh;
+    padding-right: 12.8%;
     box-sizing: border-box;
     position: relative;
   }
   
   .swiper-gallery {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     gap: 10px;
-    position: relative;
   }
   
   .arrow {
@@ -27,17 +27,17 @@
     padding: 5px;
     line-height: 1;
     position: absolute;
-    left: 92%;
+    right: 11%;
     transform: translateX(-50%);
     z-index: 10;
   }
   
   .arrow.up {
-    top: 0;
+    top: 7%;
   }
   
   .arrow.down {
-    bottom: 0;
+    bottom: -26%;
   }
   
   .swiper-images {

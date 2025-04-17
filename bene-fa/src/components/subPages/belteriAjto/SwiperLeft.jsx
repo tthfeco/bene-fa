@@ -13,15 +13,14 @@ export default function SwiperLeft() {
   }, [startIndex]);
 
   const handlePrev = () => {
-    setStartIndex((prev) => (prev + 1) % mainDoors.length);
-  };
-  
-  const handleNext = () => {
     setStartIndex((prev) =>
       (prev - 1 + mainDoors.length) % mainDoors.length
-    ); 
+    );
   };
-  
+
+  const handleNext = () => {
+    setStartIndex((prev) => (prev + 1) % mainDoors.length);
+  };
 
   const visibleDoors = [
     mainDoors[startIndex % mainDoors.length],
@@ -29,29 +28,31 @@ export default function SwiperLeft() {
     mainDoors[(startIndex + 2) % mainDoors.length],
   ];
 
-  const currentIndex = (startIndex + 1) % mainDoors.length;
+  const activeIndex = (startIndex + 1) % mainDoors.length;
 
   return (
     <div className="swiper-left-wrapper">
-      <button className="arrow up" onClick={handlePrev}>↑</button>
+      <div className="arrow-container">
+        <button className="arrow up" onClick={handleNext}>↑</button>
 
-      <div className="swiper-gallery">
-        <div className="swiper-images">
-          {visibleDoors.map((door, index) => (
-            <div
-              key={door.id}
-              className={`swiper-item ${index === 1 ? "active" : ""}`}
-            >
-              <img src={door.image} alt={`Ajtó ${door.id}`} />
-            </div>
-          ))}
+        <div className="swiper-gallery">
+          <div className="swiper-images">
+            {visibleDoors.map((door, index) => (
+              <div
+                key={door.id}
+                className={`swiper-item ${index === 1 ? "active" : ""}`}
+              >
+                <img src={door.image} alt={`Ajtó ${door.id}`} />
+              </div>
+            ))}
+          </div>
         </div>
+
+        <button className="arrow down" onClick={handlePrev}>↓</button>
       </div>
 
-      <button className="arrow down" onClick={handleNext}>↓</button>
-
       <div className="swiper-counter">
-        {currentIndex + 1}/{mainDoors.length}
+        {activeIndex + 1}/{mainDoors.length}
       </div>
     </div>
   );
