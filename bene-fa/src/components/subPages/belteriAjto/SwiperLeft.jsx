@@ -17,7 +17,7 @@ export default function SwiperLeft() {
       (prev - 1 + mainDoors.length) % mainDoors.length
     );
   };
-  
+
   const handleNext = () => {
     setStartIndex((prev) => (prev + 1) % mainDoors.length);
   };
@@ -27,6 +27,8 @@ export default function SwiperLeft() {
     mainDoors[(startIndex + 1) % mainDoors.length],
     mainDoors[(startIndex + 2) % mainDoors.length],
   ];
+
+  const activeIndex = (startIndex + 1) % mainDoors.length;
 
   return (
     <div className="swiper-left-wrapper">
@@ -46,6 +48,10 @@ export default function SwiperLeft() {
       </div>
 
       <button className="arrow down" onClick={handleNext}>↓</button>
+
+      <div className="swiper-counter">
+        {activeIndex + 1}/{mainDoors.length}
+      </div>
     </div>
   );
 }
