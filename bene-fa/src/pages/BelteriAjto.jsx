@@ -1,6 +1,6 @@
-import SubHeader from "../components/SubHeader.jsx";
-import SwiperLeft from "../components/subPages/belteriAjto/SwiperLeft.jsx";
 import "./BelteriAjto.css";
+import SubHeader from "../components/SubHeader";
+import SwiperLeft from "../components/subPages/belteriAjto/SwiperLeft";
 
 export default function BelteriAjto() {
   return (
@@ -8,9 +8,11 @@ export default function BelteriAjto() {
       <SubHeader />
       <div className="interior-door-container">
         <div className="leftSide">
-            <SwiperLeft/>    
+          <SwiperLeft />
         </div>
-        <div className="rightSide"></div>
+        <div className="rightSide">
+          {/* Ide jön a jobb oldali tartalom */}
+        </div>
       </div>
     </div>
   );
