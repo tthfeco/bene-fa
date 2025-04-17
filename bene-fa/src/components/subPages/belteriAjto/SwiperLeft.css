@@ -1,0 +1,19 @@
+.swiper-left-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .leftContent {
+    width: 70%;
+    border: 1px dashed #999; /* vizuális keret, később törölhető */
+    height: 100%;
+  }
+  
+  .rightContent {
+    width: 30%;
+    border: 1px dashed #ccc;
+    height: 100%;
+  }
+  
