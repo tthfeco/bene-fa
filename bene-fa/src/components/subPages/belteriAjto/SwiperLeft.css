@@ -3,14 +3,27 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+    box-sizing: border-box;
   }
   
   .swiper-gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%; /* vagy 100% ha szélesebbre akarod */
+    justify-content: center; /* függőleges középre igazítás */
+    height: 100%;
+    gap: 10px;
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
   }
   
   .swiper-images {
@@ -22,14 +35,9 @@
   }
   
   .swiper-item img {
-    width: 120px;
+    width: 90px;
     height: auto;
-  }
-  
-  .arrow {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
+    max-height: 25vh;
+    object-fit: contain;
   }
   
