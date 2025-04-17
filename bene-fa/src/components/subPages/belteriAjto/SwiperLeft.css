@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 5vh;
+    padding-right: 12vh;
     box-sizing: border-box;
     position: relative;
   }
@@ -27,7 +27,7 @@
     padding: 5px;
     line-height: 1;
     position: absolute;
-    left: 50%;
+    left: 92%;
     transform: translateX(-50%);
     z-index: 10;
   }
@@ -69,6 +69,6 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
   }  
   
