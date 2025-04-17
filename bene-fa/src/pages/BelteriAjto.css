@@ -12,3 +12,8 @@
     border: 1px dashed #ccc; /* csak segéd */
   }
   
+  .interior-door-page {
+    padding-top: 20vh; /* ez tolja le a SubHeader alól */
+    box-sizing: border-box;
+  }
+  
