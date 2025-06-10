@@ -32,28 +32,27 @@ export default function SwiperLeft() {
 
   return (
     <div className="swiper-left-wrapper">
-      <div className="arrow-container">
-        <button className="arrow up" onClick={handleNext}>↑</button>
+  <div className="swiper-gallery">
+    <button className="arrow up" onClick={handlePrev}>↑</button>
 
-        <div className="swiper-gallery">
-          <div className="swiper-images">
-            {visibleDoors.map((door, index) => (
-              <div
-                key={door.id}
-                className={`swiper-item ${index === 1 ? "active" : ""}`}
-              >
-                <img src={door.image} alt={`Ajtó ${door.id}`} />
-              </div>
-            ))}
-          </div>
+    <div className="swiper-images">
+      {visibleDoors.map((door, index) => (
+        <div
+          key={door.id}
+          className={`swiper-item ${index === 1 ? "active" : ""}`}
+        >
+          <img src={door.image} alt={`Ajtó ${door.id}`} />
         </div>
-
-        <button className="arrow down" onClick={handlePrev}>↓</button>
-      </div>
-
-      <div className="swiper-counter">
-        {activeIndex + 1}/{mainDoors.length}
-      </div>
+      ))}
     </div>
+
+    <button className="arrow down" onClick={handleNext}>↓</button>
+  </div>
+
+  <div className="swiper-counter">
+    {activeIndex + 1}/{mainDoors.length}
+  </div>
+</div>
+
   );
 }

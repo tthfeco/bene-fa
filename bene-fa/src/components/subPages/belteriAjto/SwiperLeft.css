@@ -9,34 +9,29 @@
   position: relative;
 }
   
-  .swiper-gallery {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
+.swiper-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
   
   .arrow {
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 4vh;
     cursor: pointer;
     padding: 5px;
     line-height: 1;
-    position: absolute;
-    right: 11%;
-    transform: translateX(-50%);
-    z-index: 10;
   }
   
   .arrow.up {
-    top: 7%;
+    top: 0%;
   }
   
   .arrow.down {
-    bottom: -26%;
+    margin-top: 10%;
   }
   
   .swiper-images {
