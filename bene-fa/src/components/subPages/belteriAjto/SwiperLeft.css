@@ -1,13 +1,13 @@
 .swiper-left-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 12.8%;
-    box-sizing: border-box;
-    position: relative;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 12.8%;
+  box-sizing: border-box;
+  position: relative;
+}
   
   .swiper-gallery {
     position: relative;
@@ -15,7 +15,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     gap: 10px;
   }
   
@@ -46,7 +45,6 @@
     gap: 5vh;
     align-items: center;
     justify-content: center;
-    height: 100%;
   }
   
   .swiper-item img {
@@ -71,4 +69,19 @@
     color: #333;
     padding-right: 0.5rem;
   }  
+
+  .swiper-left-wrapper,
+  .swiper-gallery,
+  .swiper-images {
+    overscroll-behavior: contain;
+    pointer-events: auto;
+    touch-action: manipulation;
+  }
+
+  
+  
+  
+
+  
+
   

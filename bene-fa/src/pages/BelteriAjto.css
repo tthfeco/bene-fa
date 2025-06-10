@@ -1,28 +1,27 @@
+.interior-door-page {
+  padding-top: 100px; /* vagy pontosan amennyivel lejjebb akarod tolni a subheadertől */
+  box-sizing: border-box;
+}
+
 .interior-door-container {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-  }
-  
-  .leftSide,
-  .rightSide {
-    width: 50%;
-    height: 100%;
-    border: 1px dashed #ccc; /* csak segéd */
-  }
-  
-  .interior-door-page {
-    padding-top: 20vh; /* ez tolja le a SubHeader alól */
-    box-sizing: border-box;
-  }
-  
-  .leftSide-inner {
-    display: flex;
-    flex-direction: row; /* egymás mellé */
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  
+  display: flex;
+  width: 100vw;
+  box-sizing: border-box;
+  /* height: 100vh; ← ezt TÖRÖLD */
+}
+
+.leftSide,
+.rightSide {
+  width: 50%;
+  /* height: 100%; ← ezt is TÖRÖLD */
+  border: none; /* segédkeret eltávolítva */
+}
+
+.leftSide-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  /* height: 100%; ← ezt is TÖRÖLD */
+}

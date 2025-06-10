@@ -21,6 +21,8 @@
 /* Megakadályozza a vízszintes görgetést mindenhol */
 html, body {
   overflow-x: hidden;
+  height: auto;
+  overflow-y: auto;
   width: 100%;
   margin: 0;
   padding: 0;
