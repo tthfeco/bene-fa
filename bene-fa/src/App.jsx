@@ -8,7 +8,7 @@ import ReferenceGallery from "./components/ReferenceGallery.jsx";
 import WeboldalLablec from "./components/WeboldalLablec.jsx";
 import MainGallery from "./components/MainGallery.jsx";
 import MainSwiper from "./components/MainSwiper.jsx";
-import BelteriAjto from "./pages/BelteriAjto"; // <-- új aloldal
+import BelteriAjto from "./pages/BelteriAjto";
 
 function App() {
   return (
