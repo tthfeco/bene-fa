@@ -22,87 +22,87 @@ import door20 from "/src/assets/doors/belteri/20.svg";
 
 const mainDoors = [
   {
-    id: "01",
+    id: "0",
     image: door0
   },  
   {
-    id: "2",
+    id: "1",
     image: door1
   },
   {
-    id: "3",
+    id: "2",
     image: door2
   },
   {
-    id: "4",
+    id: "3",
     image: door3
   },
   {
-    id: "5",
+    id: "4",
     image: door4
   },
   {
-    id: "6",
+    id: "5",
     image: door5
   },
   {
-    id: "7",
+    id: "6",
     image: door6
   },
   {
-    id: "8",
+    id: "7",
     image: door7
   },
   {
-    id: "9",
+    id: "8",
     image: door8
   },
   {
-    id: "10",
+    id: "9",
     image: door9
   },
   {
-    id: "11",
+    id: "10",
     image: door10
   },
   {
-    id: "12",
+    id: "11",
     image: door11
   },
   {
-    id: "13",
+    id: "12",
     image: door12
   },
   {
-    id: "14",
+    id: "13",
     image: door13
   },
   {
-    id: "15",
+    id: "14",
     image: door14
   },
   {
-    id: "16",
+    id: "15",
     image: door15
   },
   {
-    id: "17",
+    id: "16",
     image: door16
   },
   {
-    id: "18",
+    id: "17",
     image: door17
   },
   {
-    id: "19",
+    id: "18",
     image: door18
   },
   {
-    id: "20",
+    id: "19",
     image: door19
   },
   {
-    id: "21",
+    id: "20",
     image: door20
   }
 ]
