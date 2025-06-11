@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  margin-left: 13rem;
+  margin-left: 10rem !important;
   box-sizing: border-box;
 }
 
