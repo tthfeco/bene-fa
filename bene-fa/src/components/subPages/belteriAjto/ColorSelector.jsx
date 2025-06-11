@@ -1,4 +1,27 @@
+import React from "react";
+import "./ColorSelector.css";
+import doorColors from "../../../data/belteri/doorColors.js";
+
 export default function ColorSelector() {
-    return <div>Color selector here</div>;
-  };
-  
+  const firstRow = doorColors.slice(0, 8);
+  const secondRow = doorColors.slice(8);
+
+  return (
+    <div className="color-selector">
+      <div className="color-row">
+        {firstRow.map((color) => (
+          <div key={color.id} className="color-option">
+            <img src={color.image} alt={`Color ${color.id}`} />
+          </div>
+        ))}
+      </div>
+      <div className="color-row">
+        {secondRow.map((color) => (
+          <div key={color.id} className="color-option">
+            <img src={color.image} alt={`Color ${color.id}`} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};

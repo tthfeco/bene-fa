@@ -1,3 +1,4 @@
+import React from "react";
 import "./RightText.css";
 
 export default function RightText() {
@@ -23,4 +24,4 @@ export default function RightText() {
       <p>XHT 113 1 réteg, XBC 2 1 réteg, XGC 068 K 1 réteg</p>
     </div>
   );
-}
+};

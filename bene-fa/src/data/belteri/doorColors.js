@@ -38,5 +38,4 @@ const doorColors = [
   { id: '18', image: color18 },
 ];
 
-
 export default doorColors;
