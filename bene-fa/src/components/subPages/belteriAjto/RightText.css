@@ -1,0 +1,37 @@
+.right-text {
+    margin-left: 8rem;
+    margin-right: 4rem;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1;
+  }
+  
+  .right-text h2 {
+    font-size: 1.7rem;
+  }
+  
+  .right-text .subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    color: #333;
+    margin-top: -1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .right-text p {
+    font-size: 0.95rem;
+    margin-bottom: -0.65rem;
+  }
+  
+  .right-text ul {
+    margin: 0 0 1rem 6rem;
+    padding: 0;
+    list-style-type: disc;
+  }
+  
+  .right-text li {
+    margin-bottom: 0.1rem;
+    font-size: 0.95rem;
+  }
+  
