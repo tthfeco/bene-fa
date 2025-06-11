@@ -17,7 +17,7 @@ import color16 from "/src/assets/doors/belteri/colors/16.svg";
 import color17 from "/src/assets/doors/belteri/colors/17.svg";
 import color18 from "/src/assets/doors/belteri/colors/18.svg";
 
-const mainColors = [
+const doorColors = [
   { id: '1', image: color1 },
   { id: '2', image: color2 },
   { id: '3', image: color3 },
@@ -39,4 +39,4 @@ const mainColors = [
 ];
 
 
-export default mainColors;
+export default doorColors;
