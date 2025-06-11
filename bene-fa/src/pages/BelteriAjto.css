@@ -1,5 +1,5 @@
 .interior-door-page {
-  padding-top: 100px; /* vagy pontosan amennyivel lejjebb akarod tolni a subheadertől */
+  padding-top: 100px; 
   box-sizing: border-box;
 }
 
@@ -7,14 +7,12 @@
   display: flex;
   width: 100vw;
   box-sizing: border-box;
-  /* height: 100vh; ← ezt TÖRÖLD */
 }
 
 .leftSide,
 .rightSide {
   width: 50%;
-  /* height: 100%; ← ezt is TÖRÖLD */
-  border: none; /* segédkeret eltávolítva */
+  border: none;
 }
 
 .leftSide-inner {
@@ -23,5 +21,4 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  /* height: 100%; ← ezt is TÖRÖLD */
 }
