@@ -1,0 +1,34 @@
+.color-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    margin-left: 6.5rem;
+  }
+  
+  .color-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: border 0.2s ease;
+  }
+  
+  .color-option:hover {
+    border: 2px solid #000;
+  }
+  
+  .color-option img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

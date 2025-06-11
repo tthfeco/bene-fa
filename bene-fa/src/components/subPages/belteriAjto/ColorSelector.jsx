@@ -1,6 +1,5 @@
-import React from "react";
 import "./ColorSelector.css";
-import doorColors from "../../../data/belteri/doorColors.js";
+import doorColors from "../../../data/belteri/doorColors";
 
 export default function ColorSelector() {
   const firstRow = doorColors.slice(0, 8);
@@ -24,4 +23,4 @@ export default function ColorSelector() {
       </div>
     </div>
   );
-};
+}
