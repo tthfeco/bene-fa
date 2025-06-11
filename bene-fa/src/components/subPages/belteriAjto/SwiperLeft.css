@@ -61,7 +61,7 @@
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #333;
   padding-right: 0.5rem;
 }
