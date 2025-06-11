@@ -1,7 +1,8 @@
 .right-text {
     margin-left: 8rem;
-    margin-right: 4rem;
+    margin-right: 10rem;
     text-align: justify;
+    text-justify: inter-word;
     font-family: Arial, sans-serif;
     color: #000000;
     line-height: 1;
