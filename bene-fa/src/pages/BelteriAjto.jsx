@@ -2,6 +2,7 @@ import "./BelteriAjto.css";
 import SubHeader from "../components/SubHeader";
 import LargePreview from "../components/subPages/belteriAjto/LargePreview.jsx";
 import SwiperLeft from "../components/subPages/belteriAjto/SwiperLeft";
+import RightSide from "../components/subPages/belteriAjto/RightSide.jsx";
 
 export default function BelteriAjto() {
   return (
@@ -15,7 +16,7 @@ export default function BelteriAjto() {
         </div>  
         </div>
         <div className="rightSide">
-          {/* Ide jön a jobb oldali tartalom */}
+        <RightSide />
         </div>
       </div>
     </div>
