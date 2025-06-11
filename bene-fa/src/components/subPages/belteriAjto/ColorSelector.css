@@ -31,6 +31,12 @@
     border: 2px solid #ffffff;
   }
   
+  .color-option.active {
+    border: 2px solid white;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  }
+  
+  
   .color-option img {
     width: 100%;
     height: 100%;
