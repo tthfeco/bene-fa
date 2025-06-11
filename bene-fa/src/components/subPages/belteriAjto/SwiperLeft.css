@@ -73,3 +73,18 @@
   pointer-events: auto;
   touch-action: manipulation;
 }
+
+.swiper-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* <-- Ez helyezi középre függőlegesen */
+  align-items: center;       /* Ez vízszintesen középre */
+  height: 100%;              /* vagy pl. 100%, 100vh, vagy 30rem, attól függ mire van szükséged */
+}
+
+.leftSide-inner {
+  height: 100%;
+  display: flex;
+  align-items: center; /* ha vízszintesen is középre akarod */
+}
+
