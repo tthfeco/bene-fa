@@ -3,13 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2vh;
-  margin-left: 25vh;
+  padding: 1.5rem;
+  margin-left: 12rem;
   box-sizing: border-box;
 }
 
 .large-preview-wrapper img {
+  width: auto;
   max-width: 90%;
-  max-height: 90vh; /* vagy max 80vh */
+  min-width: 20rem;
+  max-height: 40rem;
   object-fit: contain;
 }
+
+
