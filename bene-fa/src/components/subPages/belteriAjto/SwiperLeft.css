@@ -57,7 +57,7 @@
 
 .swiper-counter {
   position: absolute;
-  right: 2rem;
+  margin-left: 10rem;
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
   font-size: 2rem;
