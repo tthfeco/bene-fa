@@ -16,7 +16,7 @@ export default function SelectionPreview() {
       className="selection-preview"
     >
       {suffixes.map((suffix) => {
-        const src = `/src/assets/doors/belteri/coloredDoors/${activeDoorId}/${activeDoorId}_${activeColorId}_${suffix}.svg`;
+        const src = `../../src/assets/doors/belteri/coloredDoors/${activeDoorId}/${activeDoorId}_${activeColorId}_${suffix}.svg`;
         return (
           <img
             key={suffix}
