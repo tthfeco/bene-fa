@@ -1,0 +1,9 @@
+.right-side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; /* vagy pl. 100vh ha fix nézet */
+  overflow: hidden;
+}
+
+  

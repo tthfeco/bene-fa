@@ -11,7 +11,10 @@ export default function SelectionPreview() {
   const suffixes = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
   return (
-    <div className="selection-preview">
+    <div
+      key={`${activeDoorId}-${activeColorId}`}
+      className="selection-preview"
+    >
       {suffixes.map((suffix) => {
         const src = `/src/assets/doors/belteri/coloredDoors/${activeDoorId}/${activeDoorId}_${activeColorId}_${suffix}.svg`;
         return (
@@ -26,4 +29,5 @@ export default function SelectionPreview() {
       })}
     </div>
   );
+  
 }
