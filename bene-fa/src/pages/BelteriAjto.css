@@ -4,6 +4,8 @@
 }
 
 .interior-door-page {
+  background-color: #f2f2f2;
+
   background-image: url("/src/assets/doors/belteri/backgorund/1.svg");
   background-size: cover;
   background-repeat: no-repeat;  
