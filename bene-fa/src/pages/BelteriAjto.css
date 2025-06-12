@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+.interior-door-page {
+  background-image: url("/src/assets/doors/belteri/backgorund/1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;  
+  background-position: calc(100% + 30rem) center;
+}
+
 .interior-door-container {
   display: flex;
   width: 100vw;
