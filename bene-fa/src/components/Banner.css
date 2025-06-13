@@ -29,7 +29,7 @@
 
 .banner-content {
   position: relative;
-  max-width: 600px;
+  max-width: 37rem;
   z-index: 1;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
@@ -78,29 +78,29 @@
 /* 1150px alatti méretek */
 @media (max-width: 1150px) {
   .banner h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .banner p {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .banner-button {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 3px 12px;
   }
 
   .banner-button::after {
     margin-left: 8px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
 /* 760px alatti méretek */
 @media (max-width: 760px) {
   .banner h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .banner p {
