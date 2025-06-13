@@ -340,6 +340,19 @@
   bottom: 31% !important; /* Állítsd be manuálisan */
   background-color: transparent;
 }
+
+.submenu {
+  left: 38%;
+  top: 70%;
+  right: auto;
+  transform: translateY(-50%);
+}
+
+.second-level {
+  left: auto;
+  right: 100%; /* második szintű almenü is balra */
+}
+
 }
 
 @media (max-width: 768px) {
@@ -410,4 +423,17 @@
   bottom: 29.1% !important; /* Állítsd be manuálisan */
   background-color: transparent;
 }
+
+.submenu {
+  left: 38%;
+  top: 78%;
+  right: auto;
+  transform: translateY(-50%);
+}
+
+.second-level {
+  left: auto;
+  right: 100%; /* második szintű almenü is balra */
+}
+
 }
