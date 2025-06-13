@@ -1,16 +1,15 @@
 import { useState } from "react";
 import "./SubHeader.css";
 
-export default function Header() {
+export default function SubHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header>
-      <div className="logo">BENE-FA KFT.</div>
+    <header className="sub-header">
+      <div className="sub-logo">BENE-FA KFT.</div>
 
-      {/* Hamburger ikon */}
       <div
-        className={`hamburger-menu ${menuOpen ? "active" : ""}`}
+        className={`sub-hamburger-menu ${menuOpen ? "active" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
       >
         <div></div>
@@ -18,8 +17,7 @@ export default function Header() {
         <div></div>
       </div>
 
-      {/* Navigációs menü */}
-      <nav className={`nav ${menuOpen ? "active" : ""}`}>
+      <nav className={`sub-nav ${menuOpen ? "active" : ""}`}>
         <a href="#">Főoldal</a>
         <a href="#">Kapcsolat</a>
         <a href="#">Rólunk</a>
