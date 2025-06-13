@@ -16,7 +16,7 @@
     "react-dom": "^18.3.1",
     "react-draggable": "^4.4.6",
     "react-router-dom": "^7.5.0",
-    "swiper": "^11.2.4"
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

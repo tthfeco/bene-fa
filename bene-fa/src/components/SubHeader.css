@@ -1,46 +1,138 @@
-.subheader {
-    top: 10px;
-    left: 0;
-    width: 100%;
+/* ==== ALAPÉRTELMEZETT (desktop) ==== */
+header {
+  padding: 1.2rem 2rem 0 8rem;
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  z-index: 100;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 80px;
+  padding-right: 80px;
+}
+
+.nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: border 0.2s ease;
+}
+
+.nav a:hover {
+  cursor: pointer;
+}
+
+/* ==== Hamburger menü alapbeállítás ==== */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 35px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px 0;
+  transition: 0.4s;
+  z-index: 100;
+}
+
+/* ==== Hamburger ikon szín, ha aktív ==== */
+.hamburger-menu.active div {
+  background-color: black;
+}
+
+/* ==== Hamburger ikon "X"-re animálása ==== */
+.hamburger-menu.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ==== 1150px ALATT (tablet + mobil) ==== */
+@media screen and (max-width: 1150px) {
+  header {
+    padding: 1rem 3rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: -0.6rem;
+    right: 0;
+    background-color: rgba(225, 225, 225, 0.95);
+    width: 12.5rem;
+    text-align: left;
+    border-bottom-left-radius: 1rem;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    gap: 0;
+  }
+
+  .nav a {
+    display: block;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: none;
+  }
+
+  .nav.active {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    color: black;
-    z-index: 100;
-    background: transparent;
-    box-sizing: border-box;
   }
-  
-  .subheader .logo {
-    padding-left: 15vh;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .subheader .nav {
+
+  .hamburger-menu {
     display: flex;
-    gap: 80px;
-    padding-right: 10vh;
   }
-  
-  .subheader .nav a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 5px 30px;
-    border-radius: 50px;
-    border: 3px solid transparent; /* csak hover-re jelenik meg */
-    transition: border 0.2s ease;
+
+  .hamburger-menu div {
+    z-index: 1000;
+    width: 2rem;
+    height: 0.1rem;
+    margin: 0.3rem 0;
   }
-  
-  .subheader .nav a:hover {
-    border: 3px solid black;
-    cursor: pointer;
+}
+
+/* ==== 760px ALATT (mobil) ==== */
+@media screen and (max-width: 760px) {
+  .logo {
+    font-size: 1.1rem;
   }
-  
-  .subheader .hamburger-menu {
-    display: none; /* egyelőre nem használjuk */
+
+  .nav a {
+    font-size: 0.95rem;
+    padding: 8px;
   }
-  
+
+  .hamburger-menu div {
+    width: 28px;
+    height: 2.5px;
+  }
+}
