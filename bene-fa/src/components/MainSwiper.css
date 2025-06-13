@@ -1,18 +1,21 @@
 .swiper-container {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto; /* <<< középre igazítás */
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .swiper-wrapper {
   display: flex;
+  justify-content: center;
   gap: 50px;
   align-items: center;
 }
+
 
 .swiper-slide-content {
   background-size: cover;
