@@ -353,7 +353,7 @@
   .category {
     width: 90%; /* Szinte teljes szélesség kihasználása */
     max-width: 28rem; /* Max szélesség beállítása */
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
   }
 
   .category-image {
@@ -386,7 +386,7 @@
     position: absolute !important;
     width: 7% !important;
     height: 7% !important;
-    bottom: 23.55%;
+    bottom: 25%;
     right: 12.5%;
     background: transparent;
     z-index: 10; /* Adj neki magasabb rétegszintet */
@@ -407,7 +407,7 @@
 
     /* Ha csak a második kategória csúszott el */
 .category:nth-child(2) .category-extra {
-  bottom: 25% !important; /* Állítsd be manuálisan */
+  bottom: 29.1% !important; /* Állítsd be manuálisan */
   background-color: transparent;
 }
 }
