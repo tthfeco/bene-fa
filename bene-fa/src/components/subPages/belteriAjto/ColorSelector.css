@@ -44,3 +44,12 @@
     transition: transform 0.2s ease;
   }
   
+  @media (max-width: 760px) {
+    .color-selector {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1.5rem 0;
+      margin-left: 0rem;
+    }
+  }

@@ -86,3 +86,50 @@
   display: flex;
   align-items: center; 
 }
+
+@media (max-width: 760px) {
+  .swiper-left-wrapper {
+    padding-left: 0rem;
+  }
+
+  .swiper-gallery {
+    gap: 1rem;
+  }
+  
+  .arrow {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  
+  .arrow.up {
+    top: 0.5rem;
+  }
+  
+  .arrow.down {
+    top: 24.5rem;
+  }
+  
+  .swiper-images {
+    min-height: 25rem;
+    gap: 1.5rem;
+  }
+  
+  .swiper-item img {
+    width: 2.4rem;
+    max-height: 8rem;
+  }
+  
+  .swiper-counter {
+    position: absolute;
+    margin-left: 6.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .swiper-left-wrapper,
+  .swiper-gallery,
+  .swiper-images {
+    overscroll-behavior: contain;
+    pointer-events: auto;
+    touch-action: manipulation;
+  }
+}

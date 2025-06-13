@@ -1,12 +1,11 @@
-.interior-door-page {
-  padding-top: 100px; 
-  box-sizing: border-box;
-}
+/* --------- Alapstílus (desktop) --------- */
 
 .interior-door-page {
+  padding-top: 100px;
+  box-sizing: border-box;
   background-image: url("/src/assets/doors/belteri/backgorund/1.svg");
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: calc(100% + 30rem) center;
 }
 
@@ -30,10 +29,19 @@
   width: 100%;
 }
 
+
+/* --------- Tablet nézet: max 1150px --------- */
+
 @media (max-width: 1150px) {
+  .interior-door-page {
+    background-position: center center;
+    background-size: contain;
+  }
+
   .interior-door-container {
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
   }
 
   .leftSide,
@@ -42,27 +50,108 @@
   }
 
   .leftSide-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem; /* Kis térköz az elemek között */
+    padding-left: 15rem;
+    padding-right: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem; /* távolság a két komponens között */
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; 
+  }
+
+  .large-preview-wrapper {
+    margin-left: 0;
+  }
+  
+
+  .large-preview-wrapper,
+  .swiper-left-wrapper {
+    max-width: 100%;
+    margin-left: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-counter {
+    position: static;
+    transform: rotate(0deg);
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .right-side-content{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 }
+
+
+/* --------- Mobil nézet: max 760px --------- */
 
 @media (max-width: 760px) {
   .interior-door-page {
-    padding-top: 60px;
-  }
-
-  .leftSide-inner {
-    gap: 1rem;
+    background-position: center center;
+    background-size: contain;
   }
 
   .interior-door-container {
+    flex-direction: column;
+    align-items: center;
     padding: 0 1rem;
   }
 
+  .leftSide,
   .rightSide {
-    padding-top: 2rem;
+    width: 100%;
+  }
+
+  .leftSide-inner {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem; /* távolság a két komponens között */
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 2.5rem;
+  }
+
+  .large-preview-wrapper {
+    margin-left: 0;
+  }
+
+  .large-preview-wrapper img {
+    max-width: 10rem !important;
+    width: auto;
+    min-width: 8rem !important;
+    max-height: 25rem !important;
+    object-fit: contain;
+    margin-right: -2rem;
+  }
+
+  .large-preview-wrapper,
+  .swiper-left-wrapper {
+    max-width: 100%;
+    margin-left: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-counter {
+    position: static;
+    transform: rotate(0deg);
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .right-side-content{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 }
-
