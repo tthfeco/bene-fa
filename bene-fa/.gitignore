@@ -1,24 +1,28 @@
-# Logs
-logs
+# Node modulok
+node_modules/
+
+# Build / dist fájlok
+dist/
+dist-ssr/
+build/
+
+# Log fájlok
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Környezeti fájlok
+.env
+.env.local
+.env.*.local
+
+# Archívumok
+*.zip
+*.tar.gz
+*.rar
+*.tgz
+
+# Ideiglenes fájlok
+*.tmp
+*.bak
+
+# Git cache
 *.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
