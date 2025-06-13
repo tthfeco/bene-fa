@@ -280,8 +280,8 @@
   }
 
   .category-image {
-    width: 28rem;
-    height: 28rem; /* Képek méretének csökkentése */
+    width: 21rem;
+    height: 21rem; /* Képek méretének csökkentése */
   }
 
   .category-arrow {
@@ -352,13 +352,13 @@
 
   .category {
     width: 90%; /* Szinte teljes szélesség kihasználása */
-    max-width: 400px; /* Max szélesség beállítása */
+    max-width: 28rem; /* Max szélesség beállítása */
     margin-bottom: 20px;
   }
 
   .category-image {
     width: 75%;
-    height: 400px; /* Nagyobb képek egy oszlopos nézetben */
+    height: 28rem; /* Nagyobb képek egy oszlopos nézetben */
   }
 
   .category-arrow {
