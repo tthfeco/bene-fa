@@ -1,10 +1,17 @@
 .categories {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start; /* Az elemek teteje egy vonalban marad */
-  padding: 50px 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1280px;
+  width: 100%;
+  padding: 50px 0;
+  margin: 0 auto;
   background: white;
+  box-sizing: border-box;
 }
+
 
 .category {
   position: relative;
@@ -259,16 +266,22 @@
   .categories {
     flex-wrap: wrap; /* A kategóriák törjenek új sorba, ha nem férnek el egy sorban */
     justify-content: center; /* Középre igazítás */
-    gap: 25px; /* Kategóriák közötti távolság */
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 1.3rem; /* Kategóriák közötti távolság */
   }
 
   .category {
     width: 45%; /* Két oszlopos elrendezés */
-    max-width: 250px; /* Kategória maximális szélessége */
+    max-width: none; /* Kategória maximális szélessége */
+    margin-bottom: 1.5rem;
   }
 
   .category-image {
-    height: 300px; /* Képek méretének csökkentése */
+    width: 28rem;
+    height: 28rem; /* Képek méretének csökkentése */
   }
 
   .category-arrow {
@@ -279,11 +292,11 @@
   }
 
   .category-text h3 {
-    font-size: 1rem; /* Kategórianév kisebb méretben */
+    font-size: 2rem; /* Kategórianév kisebb méretben */
   }
 
   .category p {
-    font-size: 0.8rem; /* Leírás betűmérete kisebb */
+    font-size: 1.3rem; /* Leírás betűmérete kisebb */
   }
 
   .category-image::before {
