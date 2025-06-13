@@ -291,10 +291,6 @@
     font-size: 1rem;
   }
 
-  .category-text h3 {
-    font-size: 2rem; /* Kategórianév kisebb méretben */
-  }
-
   .category p {
     font-size: 1.3rem; /* Leírás betűmérete kisebb */
   }
@@ -374,6 +370,12 @@
     height: 28rem; /* Nagyobb képek egy oszlopos nézetben */
   }
 
+  .category h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+  }
+
   .category-arrow {
     top: 88.5%;
     right: 1%;
@@ -399,7 +401,7 @@
     position: absolute !important;
     width: 7% !important;
     height: 7% !important;
-    bottom: 25%;
+    bottom: 22.8%;
     right: 12.5%;
     background: transparent;
     z-index: 10; /* Adj neki magasabb rétegszintet */
@@ -420,7 +422,7 @@
 
     /* Ha csak a második kategória csúszott el */
 .category:nth-child(2) .category-extra {
-  bottom: 29.1% !important; /* Állítsd be manuálisan */
+  bottom: 26.8% !important; /* Állítsd be manuálisan */
   background-color: transparent;
 }
 
