@@ -1,8 +1,8 @@
 import { useActiveDoor } from "../../../context/ActiveDoorContext";
 import { useActiveDoorColor } from "../../../context/ActiveDoorColorContext";
-import "./SelectionPreview.css"; 
+import "./SelectionPreview.css";
 
-export default function SelectionPreview() {
+export default function SelectionPreview({ basePath }) {
   const { activeDoorId } = useActiveDoor();
   const { activeColorId } = useActiveDoorColor();
 
@@ -11,17 +11,14 @@ export default function SelectionPreview() {
   const suffixes = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
   return (
-    <div
-      key={`${activeDoorId}-${activeColorId}`}
-      className="selection-preview"
-    >
+    <div key={`${activeDoorId}-${activeColorId}`} className="selection-preview">
       {suffixes.map((suffix) => {
-        const src = `/assets/doors/belteri/coloredDoors/${activeDoorId}/${activeDoorId}_${activeColorId}_${suffix}.svg`;
+        const src = `${basePath}/${activeDoorId}/${activeDoorId}_${activeColorId}_${suffix}.svg`;
         return (
           <img
             key={suffix}
             src={src}
-            alt={`Ajtó ${activeDoorId} - Szín ${activeColorId} - ${suffix}`}
+            alt={`${activeDoorId} - ${activeColorId} - ${suffix}`}
             onError={(e) => (e.target.style.display = "none")}
             className="preview-image"
           />
@@ -29,5 +26,4 @@ export default function SelectionPreview() {
       })}
     </div>
   );
-  
 }
