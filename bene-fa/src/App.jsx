@@ -9,6 +9,7 @@ import MainGallery from "./components/MainGallery.jsx";
 import MainSwiper from "./components/MainSwiper.jsx";
 import BelteriAjto from "./pages/BelteriAjto";
 import Ablak from "./pages/Ablak";
+import KulteriAjto from "./pages/KulteriAjto";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         />
         <Route path="/belteri-ajto" element={<BelteriAjto />} />
         <Route path="/ablak" element={<Ablak />} />
+        <Route path="/kulteri-ajto" element={<KulteriAjto />} />
       </Routes>
     </Router>
   );
