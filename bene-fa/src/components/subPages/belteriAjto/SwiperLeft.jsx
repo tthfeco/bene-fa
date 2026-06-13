@@ -6,8 +6,10 @@ export default function SwiperLeft({ items }) {
   const [startIndex, setStartIndex] = useState(0);
   const { setActiveDoorId } = useActiveDoor();
 
+  const visibleCount = Math.min(3, items.length);
+
   useEffect(() => {
-    const centerIndex = (startIndex + 1) % items.length;
+    const centerIndex = items.length === 1 ? 0 : (startIndex + 1) % items.length;
     setActiveDoorId(items[centerIndex].id);
   }, [startIndex]);
 
@@ -19,13 +21,11 @@ export default function SwiperLeft({ items }) {
     setStartIndex((prev) => (prev + 1) % items.length);
   };
 
-  const visibleDoors = [
-    items[startIndex % items.length],
-    items[(startIndex + 1) % items.length],
-    items[(startIndex + 2) % items.length],
-  ];
+  const visibleDoors = Array.from({ length: visibleCount }, (_, i) =>
+    items[(startIndex + i) % items.length]
+  );
 
-  const activeIndex = (startIndex + 1) % items.length;
+  const activeIndex = items.length === 1 ? 0 : (startIndex + 1) % items.length;
 
   return (
     <div className="swiper-left-wrapper">
@@ -33,7 +33,10 @@ export default function SwiperLeft({ items }) {
         <button className="arrow up" onClick={handlePrev}>↑</button>
         <div className="swiper-images">
           {visibleDoors.map((door, index) => (
-            <div key={door.id} className={`swiper-item ${index === 1 ? "active" : ""}`}>
+            <div
+              key={`${door.id}-${index}`}
+              className={`swiper-item ${index === Math.floor(visibleCount / 2) ? "active" : ""}`}
+            >
               <img src={door.image} alt={`${door.id}`} />
             </div>
           ))}
