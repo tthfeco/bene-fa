@@ -10,6 +10,7 @@ import MainSwiper from "./components/MainSwiper.jsx";
 import BelteriAjto from "./pages/BelteriAjto";
 import Ablak from "./pages/Ablak";
 import KulteriAjto from "./pages/KulteriAjto";
+import ErkelyAjto from "./pages/ErkelyAjto";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/belteri-ajto" element={<BelteriAjto />} />
         <Route path="/ablak" element={<Ablak />} />
         <Route path="/kulteri-ajto" element={<KulteriAjto />} />
+        <Route path="/erkely-ajto" element={<ErkelyAjto />} />
       </Routes>
     </Router>
   );
