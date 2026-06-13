@@ -1,17 +1,14 @@
 import { useActiveDoor } from "../../../context/ActiveDoorContext";
-import mainDoors from "../../../data/belteri/mainDoors";
 import "./LargePreview.css";
 
-export default function LargePreview() {
+export default function LargePreview({ items }) {
   const { activeDoorId } = useActiveDoor();
-
-  const activeDoor = mainDoors.find((door) => door.id === activeDoorId);
-
-  if (!activeDoor) return null;
+  const activeItem = items.find((item) => item.id === activeDoorId);
+  if (!activeItem) return null;
 
   return (
     <div className="large-preview-wrapper">
-      <img src={activeDoor.image} alt={`Ajtó ${activeDoor.id}`} />
+      <img src={activeItem.image} alt={`${activeItem.id}`} />
     </div>
   );
 }
