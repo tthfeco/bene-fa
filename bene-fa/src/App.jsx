@@ -1,4 +1,3 @@
-// src/App.jsx
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
@@ -9,6 +8,7 @@ import WeboldalLablec from "./components/WeboldalLablec.jsx";
 import MainGallery from "./components/MainGallery.jsx";
 import MainSwiper from "./components/MainSwiper.jsx";
 import BelteriAjto from "./pages/BelteriAjto";
+import Ablak from "./pages/Ablak";
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
           }
         />
         <Route path="/belteri-ajto" element={<BelteriAjto />} />
+        <Route path="/ablak" element={<Ablak />} />
       </Routes>
     </Router>
   );

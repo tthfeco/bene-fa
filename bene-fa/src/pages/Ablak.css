@@ -1,0 +1,8 @@
+.ablak-page {
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-image: url("/src/assets/doors/ablak/backgorund/1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: calc(100% + 30rem) center;
+  }
